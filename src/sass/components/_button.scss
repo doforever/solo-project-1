@@ -23,4 +23,13 @@
       background-color: $color-greys;
     }
   }
+
+  &--disabled {
+    background-color: $color-greys-l;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $color-greys-l;
+    }
+  }
 }
