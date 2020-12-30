@@ -26,6 +26,7 @@ h2 {
 a {
   color: $color-link;
   text-decoration: none;
+  cursor: $custom-pointer;
 
   &:hover {
     color: $color-warning-l;

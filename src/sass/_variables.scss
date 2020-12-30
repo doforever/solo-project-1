@@ -20,6 +20,7 @@ $color-danger-xl: #EC7171;
 $size-text: 14px;
 $size-link: 13px;
 $size-header: 16px;
+$size-button: 18px;
 
 /* Font weight */
 $font-regular: 300;
@@ -28,4 +29,9 @@ $font-xbold: 700;
 
 /* Fonts */
 $font-main: 'Roboto', sans-serif;
+
+/* Borders */
+$radius: 4px;
+
+$custom-pointer: url("../../images/finger-cursor.png"), auto;
 

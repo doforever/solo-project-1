@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: $radius;
+  color: $color-light;
+  font-size: $size-button;
+  cursor: $custom-pointer;
+  font-weight: $font-regular;
+  line-height: 41px;
+  padding: 0 22px;
+  text-align: center;
+  background-color: $color-warning;
+
+  &:hover{
+    background-color: $color-warning-l;
+    color: $color-light;
+  }
+
+  &--grey {
+    background-color: $color-greys-d;
+
+    &:hover {
+      background-color: $color-greys;
+    }
+  }
+}
