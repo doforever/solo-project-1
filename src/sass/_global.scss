@@ -21,6 +21,7 @@ h1 {
 
 h2 {
   font-size: $size-header;
+  font-weight: $font-xbold;
 }
 
 a {
@@ -31,4 +32,70 @@ a {
   &:hover {
     color: $color-warning-l;
   }
+}
+
+/* Forms */
+
+input, textarea {
+  border: 1px solid $color-greys-l;
+  border-radius: $radius;
+  cursor: $custom-pointer;
+  font-weight: $font-regular;
+
+  &::placeholder {
+    font-weight: $font-regular;
+    color: $color-greys;
+  }
+
+  &:hover {
+    border-color: $color-greys-d;
+    color: $color-dark;
+
+    &::placeholder {
+      color: $color-dark;
+    }
+  }
+
+  &:focus {
+    outline-color: $color-greys-d;
+  }
+}
+
+input {
+  line-height: $single-line-height;
+  padding: 0 $text-padding;
+
+  &[type="date"] {
+    &::-webkit-calendar-picker-indicator {
+      background: $custom-calendar-picker no-repeat;
+      height: 13px;
+      width: 13px;
+    }
+
+    &::-webkit-datetime-edit-text{
+      content: ".";
+    }
+  }
+
+  &[type="password"] {
+    padding-left: 32px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0%;
+      left: 15px;
+      // transform: translateY(-50%);
+      content: "";
+      background: url(../images/password.svg) no-repeat;
+      width: 21px;
+      height: 12px;
+      color: red;
+    }
+  }
+}
+
+textarea {
+  padding: $text-padding;
+  font-size: $size-textarea;
 }

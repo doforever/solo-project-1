@@ -1,5 +1,5 @@
 /* Colors */
-$color-dark: #191919;
+$color-dark: #333333;
 $color-light: #FFFFFF;
 $color-header: #A6A6A6;
 $color-greys-xl: #F5F5F2;
@@ -18,6 +18,7 @@ $color-danger-xl: #EC7171;
 
 /* Font sizes */
 $size-text: 14px;
+$size-textarea: 12px;
 $size-link: 13px;
 $size-header: 16px;
 $size-button: 18px;
@@ -33,5 +34,10 @@ $font-main: 'Roboto', sans-serif;
 /* Borders */
 $radius: 4px;
 
-$custom-pointer: url("../../images/finger-cursor.png"), auto;
+/* Sizes */
+$single-line-height: 41px;
+$text-padding: 20px;
 
+/* Icons */
+$custom-pointer: url(../images/finger-cursor.png), auto;
+$custom-calendar-picker: url(../images/calendar.svg);

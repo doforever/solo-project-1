@@ -6,8 +6,8 @@
   font-size: $size-button;
   cursor: $custom-pointer;
   font-weight: $font-regular;
-  line-height: 41px;
-  padding: 0 22px;
+  line-height: $single-line-height;
+  padding: 0 $text-padding;
   text-align: center;
   background-color: $color-warning;
 
