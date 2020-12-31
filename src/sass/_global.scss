@@ -63,13 +63,13 @@ input, textarea {
 
 input {
   line-height: $single-line-height;
-  padding: 0 $text-padding;
+  padding: 0 $padding-text;
 
   &[type="date"] {
     &::-webkit-calendar-picker-indicator {
       background: $custom-calendar-picker no-repeat;
-      height: 13px;
-      width: 13px;
+      height: $size-icon;
+      width: $size-icon;
     }
 
     &::-webkit-datetime-edit-text{
@@ -81,21 +81,22 @@ input {
     padding-left: 32px;
     position: relative;
 
-    &::after {
-      position: absolute;
-      top: 0%;
-      left: 15px;
-      // transform: translateY(-50%);
-      content: "";
-      background: url(../images/password.svg) no-repeat;
-      width: 21px;
-      height: 12px;
-      color: red;
-    }
+    // &::after {
+    //   position: absolute;
+    //   top: 0%;
+    //   left: 15px;
+    //   // transform: translateY(-50%);
+    //   content: "";
+    //   background: url(../images/password.svg) no-repeat;
+    //   width: 21px;
+    //   height: 12px;
+    //   color: red;
+    // }
   }
 }
 
 textarea {
-  padding: $text-padding;
+  padding: $padding-text;
   font-size: $size-textarea;
 }
+
