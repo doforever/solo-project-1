@@ -1,0 +1,17 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  &__row {
+    height: $single-line-height;
+    border-bottom: $border-style $color-greys-l;
+
+    td {
+      border-bottom: $border-style $color-greys-l;
+    }
+  }
+
+  &__property {
+    @extend h2;
+  }
+}

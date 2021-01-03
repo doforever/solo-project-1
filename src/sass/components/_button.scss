@@ -1,5 +1,5 @@
 .button {
-  display: inline-block;
+  display: inline;
   border: none;
   border-radius: $radius;
   color: $color-light;
@@ -31,5 +31,16 @@
     &:hover {
       background-color: $color-greys-l;
     }
+  }
+
+  &--square {
+    width: $single-line-height;
+    padding: 0;
+  }
+
+  &__icon {
+    width: $size-icon;
+    height: $size-icon;
+    fill: $color-light;
   }
 }

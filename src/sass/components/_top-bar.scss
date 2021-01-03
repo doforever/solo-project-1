@@ -1,14 +1,15 @@
 .top-bar {
   background-color: $color-light;
   height: 61px;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100%;
   @include flex (row, center, flex-end);
 
   &__section {
-    padding: $padding-text $padding-sm;
+    padding: 0 $padding-sm;
+    height: 100%;
     border-left: $border-style $color-greys-xl;
     @include flex (row, center, space-evenly);
 

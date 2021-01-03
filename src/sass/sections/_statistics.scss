@@ -1,0 +1,23 @@
+.statistics {
+  .date-period__wrapper {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    >* {
+      padding: 0 $padding-sm;
+    }
+  }
+
+  .table__wrapper {
+    padding: 25px 0;
+
+    div {
+      min-width: 310px;
+      padding: 0 33px;
+    }
+  }
+
+  .chart__wrapper {
+    padding: 50px $padding-text;
+  }
+}
