@@ -10,8 +10,11 @@
   &__section {
     padding: $padding-text $padding-sm;
     border-left: $border-style $color-greys-xl;
-    border-right: $border-style $color-greys-xl;
     @include flex (row, center, space-evenly);
+
+    &:hover {
+      background-color: $color-greys-xl;
+    }
 
     &__item {
       padding: $padding-sm/2;
@@ -25,5 +28,9 @@
     &--sm {
       height: 7px;
     }
+  }
+
+  &__balance {
+    @extend h1;
   }
 }

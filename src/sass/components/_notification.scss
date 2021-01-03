@@ -1,0 +1,25 @@
+.notification {
+  position: relative;
+
+  &__status {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+
+    &--big {
+      height: 12px;
+      width: 12px;
+    }
+
+    &--active {
+      background-color: $color-success;
+    }
+
+    &--busy {
+      background-color: $color-warning;
+    }
+  }
+}
