@@ -7,6 +7,7 @@ body {
   color: $color-dark;
   font-size: $size-text;
   font-weight: $font-regular;
+  background-color: $color-greys-xl;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,39 +65,19 @@ input, textarea {
 input {
   line-height: $single-line-height;
   padding: 0 $padding-text;
-
-  &[type="date"] {
-    &::-webkit-calendar-picker-indicator {
-      background: $custom-calendar-picker no-repeat;
-      height: $size-icon;
-      width: $size-icon;
-    }
-
-    &::-webkit-datetime-edit-text{
-      content: ".";
-    }
-  }
-
-  &[type="password"] {
-    padding-left: 32px;
-    position: relative;
-
-    // &::after {
-    //   position: absolute;
-    //   top: 0%;
-    //   left: 15px;
-    //   // transform: translateY(-50%);
-    //   content: "";
-    //   background: url(../images/password.svg) no-repeat;
-    //   width: 21px;
-    //   height: 12px;
-    //   color: red;
-    // }
-  }
 }
 
 textarea {
   padding: $padding-text;
   font-size: $size-textarea;
 }
+
+/* Lists */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 

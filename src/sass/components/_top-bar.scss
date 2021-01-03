@@ -1,0 +1,29 @@
+.top-bar {
+  background-color: $color-light;
+  height: 61px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  @include flex (row, center, flex-end);
+
+  &__section {
+    padding: $padding-text $padding-sm;
+    border-left: $border-style $color-greys-xl;
+    border-right: $border-style $color-greys-xl;
+    @include flex (row, center, space-evenly);
+
+    &__item {
+      padding: $padding-sm/2;
+    }
+  }
+
+  &__icon {
+    height: 17px;
+    fill: $color-header;
+
+    &--sm {
+      height: 7px;
+    }
+  }
+}

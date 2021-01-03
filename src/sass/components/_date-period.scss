@@ -22,11 +22,6 @@
   &__icon {
     @include icon();
     flex: 0 0 auto;
-    fill: $color-greys;
-
-    &:hover {
-      fill: $color-dark;
-    }
   }
 }
 

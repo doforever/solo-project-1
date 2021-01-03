@@ -13,6 +13,6 @@
 }
 
 @mixin icon() {
-  width: $size-icon;
-  height: $size-icon;
+  max-width: $size-icon;
+  max-height: $size-icon;
 }

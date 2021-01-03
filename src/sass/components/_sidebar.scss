@@ -1,0 +1,76 @@
+.sidebar {
+  background-color: $color-dark;
+  width: $size-sidebar;
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+
+  &__section {
+    padding: $padding-text/2 0;
+
+    &--first {
+      padding-top: $padding-text;
+    }
+
+    &--underline {
+      border-bottom: $border-style $color-header;
+      padding-bottom: $padding-text*2;
+    }
+
+    &__title {
+      @extend h1;
+      padding: $padding-text/2 $padding-text;
+    }
+  }
+
+  &__header {
+    @include flex (row, center, space-between);
+    padding: 0 $padding-text;
+  }
+
+  &__toggle-menu {
+    color: $color-greys-l;
+    font-size: 23px;
+  }
+
+  &__menu-item {
+    line-height: $single-line-height;
+    padding: 0 $padding-text;
+
+    &:hover {
+      background-color: transparentize($color-greys-d, 0.8);
+      border-left: 5px solid $color-warning;
+
+      span {
+        color: $color-light;
+      }
+
+      svg {
+        fill: $color-light;
+      }
+    }
+
+    span {
+      padding-left: $padding-sm;
+      color: $color-header;
+    }
+
+    svg {
+      @include icon();
+      fill: $color-header;
+    }
+
+  }
+
+  &__manager {
+    padding: $padding-text/2 $padding-text;
+    @include flex (row, center, flex-start);
+
+    img {
+      padding-right: $padding-text/2;
+    }
+
+  }
+}
