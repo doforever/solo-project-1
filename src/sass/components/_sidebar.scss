@@ -33,6 +33,7 @@
   &__toggle-menu {
     color: $color-greys-l;
     font-size: 23px;
+    display: none;
   }
 
   &__menu-item {
@@ -72,5 +73,16 @@
       padding-right: $padding-text/2;
     }
 
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .sidebar {
+    height: $size-top-bar;
+    width: 100%;
+
+    &__toggle-menu {
+      display: initial;
+    }
   }
 }

@@ -41,7 +41,13 @@ $padding-text: 20px;
 $padding-sm: 15px;
 $size-icon: 13px;
 $size-sidebar: 189px;
+$size-top-bar: 61px;
 $size-table: 620px;
+
+/* Breakpoints */
+
+$sm: 600px;
+$mobile: 768px;
 
 /* Icons */
 $custom-pointer: url(../images/finger-cursor.png), auto;

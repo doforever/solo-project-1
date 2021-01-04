@@ -30,11 +30,20 @@ main {
       display: block;
       text-align: center;
     }
-
   }
 
   &__col {
     flex: 0 1 auto;
   }
-
 }
+
+.mobile-hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-hidden {
+    display: initial;
+  }
+}
+

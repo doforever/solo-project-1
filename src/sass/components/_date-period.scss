@@ -5,12 +5,11 @@
   @include flex(row, center, space-between);
   max-width: 300px;
 
-  &__input{
+  &__input {
     position: relative;
     border: none;
     outline: none;
     height: $single-line-height - 10px;
-    width: 50%;
     min-width: 100px;
     flex: 1;
   }
@@ -32,3 +31,13 @@
   }
 }
 
+@media only screen and (max-width: $sm) {
+  .date-period {
+    &__input {
+      text-align: center;
+      padding: 5px;
+      min-width: 70px;
+      font-size: $size-text - 1px;
+    }
+  }
+}
