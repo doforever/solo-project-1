@@ -25,5 +25,6 @@ export const settings = {
   pagesMap: {
     general: ['statistics', 'links'],
     links: ['links'],
+    banners: ['banners'],
   }
 };
