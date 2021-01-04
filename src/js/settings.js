@@ -1,5 +1,12 @@
 export const classNames = {
   general: {
-    asideExpaded : 'expaded',
+    sidebarExpaded : 'expanded',
+  }
+};
+
+export const select = {
+  general: {
+    menuToggleBtn : '.header__toggle-menu',
+    aside: 'aside',
   }
 };

@@ -17,6 +17,7 @@ aside {
   position: fixed;
   z-index: 1;
   background-color: $color-dark;
+  transition: $transition;
 }
 
 .expanded {
