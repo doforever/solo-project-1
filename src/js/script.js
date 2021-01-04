@@ -1,8 +1,23 @@
 import { classNames, select } from './settings.js';
 
-const menuToggle = document.querySelector(select.general.menuToggleBtn);
-const sidebar = document.querySelector(select.general.aside);
+const app = {
+  init: function() {
+    this.getElements();
+    this.initActions();
+  },
 
-menuToggle.addEventListener('click', () => {
-  sidebar.classList.toggle(classNames.general.sidebarExpaded);
-});
+  getElements: function() {
+    this.dom = {};
+    this.dom.menuToggle = document.querySelector(select.general.menuToggleBtn);
+    this.dom.sidebar = document.querySelector(select.general.aside);
+    this.pages = document.querySelectorAll(select.general.page);
+  },
+
+  initActions: function() {
+    this.dom.menuToggle.addEventListener('click', () => {
+      this.dom.sidebar.classList.toggle(classNames.general.sidebarExpaded);
+    });
+  },
+};
+
+app.init();

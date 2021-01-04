@@ -8,5 +8,6 @@ export const select = {
   general: {
     menuToggleBtn : '.header__toggle-menu',
     aside: 'aside',
+    page: 'section',
   }
 };
