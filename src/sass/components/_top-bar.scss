@@ -6,11 +6,12 @@
   top: 0;
   width: 100%;
   @include flex (row, center, flex-end);
+  border-bottom: $border-style $color-greys-l;
 
   &__section {
     padding: 0 $padding-sm;
     height: 100%;
-    border-left: $border-style $color-greys-xl;
+    border-left: $border-style $color-greys-l;
     @include flex (row, center, space-evenly);
 
     &:hover {

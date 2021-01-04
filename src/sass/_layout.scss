@@ -8,6 +8,7 @@ main {
     border: $border-style $color-greys-l;
     padding: 0;
     margin-top: $padding-text;
+    margin-bottom: $padding-text;
   }
 
   &__row {
@@ -23,6 +24,11 @@ main {
 
     &--naked {
       border: none;
+    }
+
+    &--vertical {
+      display: block;
+      text-align: center;
     }
 
   }

@@ -1,17 +1,32 @@
 .table {
   border-collapse: collapse;
   width: 100%;
+  text-align: left;
 
   &__row {
     height: $single-line-height;
     border-bottom: $border-style $color-greys-l;
 
+    &:hover {
+      background-color: $color-greys-xl;
+
+      .table__icon {
+        opacity: 1;
+      }
+    }
+
     td {
       border-bottom: $border-style $color-greys-l;
+      padding: 0 $padding-text;
     }
   }
 
-  &__property {
+  &__icon {
+    width: 15px;
+    opacity: 0;
+  }
+
+  &__header {
     @extend h2;
   }
 }

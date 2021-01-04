@@ -12,8 +12,18 @@
     padding: 25px 0;
 
     div {
-      min-width: 310px;
+      min-width: $size-table/2;
       padding: 0 33px;
+    }
+  }
+
+  .table {
+    td {
+      padding: 0;
+    }
+
+    td:last-child {
+      text-align: right;
     }
   }
 
