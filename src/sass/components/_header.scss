@@ -8,6 +8,11 @@
   &__toggle-menu {
     color: $color-greys-l;
     font-size: 23px;
+    cursor: $custom-pointer;
+
+    &:hover {
+      color: $color-light;
+    }
   }
 }
 

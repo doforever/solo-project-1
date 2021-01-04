@@ -21,7 +21,6 @@
 
     &:hover {
       background-color: transparentize($color-greys-d, 0.8);
-      border-left: 5px solid $color-warning;
 
       span {
         color: $color-light;
@@ -40,6 +39,11 @@
     svg {
       @include icon();
       fill: $color-header;
+    }
+
+    &--active {
+      border-left: 5px solid $color-warning;
+      background-color: transparentize($color-greys-d, 0.8);
     }
 
   }

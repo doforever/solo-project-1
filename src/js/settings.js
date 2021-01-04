@@ -1,13 +1,29 @@
 export const classNames = {
-  general: {
+  sidebar: {
     sidebarExpaded : 'expanded',
+    navLinkActive: 'sidebar__menu-item--active',
+  },
+  pages: {
+    active: 'page-active',
   }
 };
 
 export const select = {
-  general: {
+  header: {
     menuToggleBtn : '.header__toggle-menu',
-    aside: 'aside',
-    page: 'section',
+  },
+  sidebar: {
+    sidebar: 'aside',
+    navLinks: '.sidebar__menu a',
+  },
+  main: {
+    pages: 'section',
+  }
+};
+
+export const settings = {
+  pagesMap: {
+    general: ['statistics', 'links'],
+    links: ['links'],
   }
 };

@@ -26,6 +26,8 @@ aside {
 }
 
 .section {
+  display: none;
+
   .container {
     background-color: $color-light;
     border: $border-style $color-greys-l;
@@ -58,6 +60,10 @@ aside {
   &__col {
     flex: 0 1 auto;
   }
+}
+
+.page-active {
+  display: initial;
 }
 
 @media only screen and (min-width: $mobile) {
