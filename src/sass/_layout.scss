@@ -1,5 +1,27 @@
 main {
-  margin-left: $size-sidebar;
+  margin-left: 0;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+aside {
+  top: $size-top-bar;
+  left: -$size-sidebar;
+  width: $size-sidebar;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: $color-dark;
+}
+
+.expanded {
+  left: 0;
+  transition: $transition;
 }
 
 .section {
@@ -37,13 +59,26 @@ main {
   }
 }
 
-.mobile-hidden {
-  display: none;
-}
+@media only screen and (min-width: $mobile) {
+  .header {
+    width: $size-sidebar;
+    position: fixed;
+  }
 
-@media only screen and (min-width: 768px) {
-  .mobile-hidden {
-    display: initial;
+  main {
+    margin-left: $size-sidebar;
+    margin-top: $size-top-bar + $padding-text;
+  }
+
+  aside {
+    left: 0;
+  }
+
+  .top-bar {
+    position: fixed;
+    width: 100%;
+    height: $size-top-bar;
+    top: 0;
+    left: 0;
   }
 }
-

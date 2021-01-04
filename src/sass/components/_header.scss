@@ -1,0 +1,23 @@
+.header {
+  background-color: $color-dark;
+  @include flex (row, center, space-between);
+  height: $size-top-bar;
+  width: 100%;
+  padding: 0 $padding-text;
+
+  &__toggle-menu {
+    color: $color-greys-l;
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: $mobile) {
+  .header {
+    width: $size-sidebar;
+
+    &__toggle-menu {
+      display: none;
+    }
+  }
+}
+

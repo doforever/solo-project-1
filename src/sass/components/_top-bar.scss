@@ -1,21 +1,23 @@
 .top-bar {
-  background-color: $color-light;
-  height: $size-top-bar;
-  position: sticky;
-  left: 0;
-  top: 0;
-  width: 100%;
-  @include flex (row, center, flex-end);
-  border-bottom: $border-style $color-greys-l;
+  @extend .sidebar;
 
   &__section {
-    padding: 0 $padding-sm;
-    height: 100%;
-    border-left: $border-style $color-greys-l;
+    @extend .sidebar__section;
     @include flex (row, center, space-evenly);
+    padding-bottom: $padding-text/2;
 
     &:hover {
-      background-color: $color-greys-xl;
+      background-color: transparentize($color-greys-d, 0.8);
+      color: $color-light;
+      cursor: $custom-pointer;
+
+      svg {
+        fill: $color-light;
+      }
+
+      .top-bar__balance {
+        color: inherit;
+      }
     }
 
     &__item {
@@ -34,5 +36,29 @@
 
   &__balance {
     @extend h1;
+  }
+}
+
+@media only screen and (min-width: $mobile) {
+  .top-bar {
+    background-color: $color-light;
+    @include flex (row, center, flex-end);
+    border-bottom: $border-style $color-greys-l;
+
+    &__section {
+      padding: 0 $padding-sm;
+      height: 100%;
+      border-left: $border-style $color-greys-l;
+      border-bottom: none;
+
+      &:hover {
+        background-color: $color-greys-xl;
+        color: $color-header;
+
+        svg {
+          fill: $color-header;
+        }
+      }
+    }
   }
 }

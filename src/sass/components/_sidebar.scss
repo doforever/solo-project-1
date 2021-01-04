@@ -1,39 +1,18 @@
 .sidebar {
   background-color: $color-dark;
-  width: $size-sidebar;
-  left: 0;
-  top: 0;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
 
   &__section {
-    padding: $padding-text/2 0;
+    padding: $padding-text/2 0 $padding-text 0;
+    border-bottom: $border-style $color-header;
 
     &--first {
       padding-top: $padding-text;
-    }
-
-    &--underline {
-      border-bottom: $border-style $color-header;
-      padding-bottom: $padding-text*2;
     }
 
     &__title {
       @extend h1;
       padding: $padding-text/2 $padding-text;
     }
-  }
-
-  &__header {
-    @include flex (row, center, space-between);
-    padding: 0 $padding-text;
-  }
-
-  &__toggle-menu {
-    color: $color-greys-l;
-    font-size: 23px;
-    display: none;
   }
 
   &__menu-item {
@@ -76,13 +55,6 @@
   }
 }
 
-@media only screen and (max-width: $mobile) {
-  .sidebar {
-    height: $size-top-bar;
-    width: 100%;
+@media only screen and (min-width: $mobile) {
 
-    &__toggle-menu {
-      display: initial;
-    }
-  }
 }
