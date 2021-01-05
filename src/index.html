@@ -163,458 +163,451 @@
     </div>
   </aside>
   <main>
-    <section id="statistics" class="section statistics">
-      <div class="container">
-        <div class="section__row section__row--left">
-          <h1>General statistics</h1>
-        </div>
-        <div class="section__row date-period__wrapper">
-          <div>
-            <form class="date-period">
-              <input class="date-period__input" name="start_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
-              <input class="date-period__input" name="end_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
-              <svg class="date-period__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
-                <path d="M0,0v4h13V0H0z M12,3H1V1h11V3z M0,7h3V6H0V7z M5,7h3V6H5V7z M10,7h3V6h-3V7z M0,10h3V9H0V10z M5,10h3V9H5V10z M10,10h3V9
-                h-3V10z M0,13h3v-1H0V13z M5,13h3v-1H5V13z M10,13h3v-1h-3V13z"/>
-              </svg>
-            </form>
-          </div>
-          <button class="button button--square">
-            <svg class="button__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
-              <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
-                l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+    <section id="statistics" class="main__section statistics">
+      <div class="main__section__row main__section__row--left">
+        <h1>General statistics</h1>
+      </div>
+      <div class="main__section__row date-period__wrapper">
+        <div>
+          <form class="date-period">
+            <input class="date-period__input" name="start_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
+            <input class="date-period__input" name="end_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
+            <svg class="date-period__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+              <path d="M0,0v4h13V0H0z M12,3H1V1h11V3z M0,7h3V6H0V7z M5,7h3V6H5V7z M10,7h3V6h-3V7z M0,10h3V9H0V10z M5,10h3V9H5V10z M10,10h3V9
+              h-3V10z M0,13h3v-1H0V13z M5,13h3v-1H5V13z M10,13h3v-1h-3V13z"/>
             </svg>
-          </button>
+          </form>
         </div>
-        <div class="section__row section__row--naked table__wrapper">
-          <div class="section__col">
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__header">Visit Signups</td>
-                <td>124</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">FTD</td>
-                <td>445</td>
-              </tr>
-            </table>
-          </div>
-          <div class="section__col">
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__header">Net deposit</td>
-                <td>564</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Turn over</td>
-                <td>432</td>
-              </tr>
-            </table>
-          </div>
+        <button class="button button--square">
+          <svg class="button__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
+            <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
+              l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="main__section__row main__section__row--naked table__wrapper">
+        <div class="main__section__col">
+          <table class="table">
+            <tr class="table__row">
+              <td class="table__header">Visit Signups</td>
+              <td>124</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">FTD</td>
+              <td>445</td>
+            </tr>
+          </table>
         </div>
-        <div class="section__row section__row--naked">
-          <div class="chart__wrapper">
-            <figure class="chart">
-              <figcaption class="chart__title">Earnings chart</figcaption>
-              <img class="chart__visual" src="./images/graph.png" alt="graph">
-            </figure>
-          </div>
+        <div class="main__section__col">
+          <table class="table">
+            <tr class="table__row">
+              <td class="table__header">Net deposit</td>
+              <td>564</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Turn over</td>
+              <td>432</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="main__section__row main__section__row--naked">
+        <div class="chart__wrapper">
+          <figure class="chart">
+            <figcaption class="chart__title">Earnings chart</figcaption>
+            <img class="chart__visual" src="./images/graph.png" alt="graph">
+          </figure>
         </div>
       </div>
     </section>
-    <section id="links" class="section links">
-      <div class="container">
-        <div class="section__row section__row--left">
-          <h1>Links</h1>
+    <section id="links" class="main__section links">
+      <div class="main__section__row main__section__row--left">
+        <h1>Links</h1>
+      </div>
+      <div class="main__section__row main__section__row--vertical main__section__row--naked">
+        <button class="button">
+          + add new
+        </button>
+        <div class="table__wrapper">
+          <table class="table">
+            <tr class="table__row">
+              <td class="table__header">Home page</td>
+              <td><a href="#">http://www.homepage.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Currently offer</td>
+              <td><a href="#">http://www.currently.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Blurpix</td>
+              <td><a href="#">http://www.blurpix.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Your Site</td>
+              <td><a href="#">http://www.yoursite.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Google</td>
+              <td><a href="#">http://www.google.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Facebook</td>
+              <td><a href="#">http://www.facebook.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Dashboard</td>
+              <td><a href="#">http://www.dashboard.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Blurax</td>
+              <td><a href="#">http://www.blurax.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Piece of Wine</td>
+              <td><a href="#">http://www.pieceofwine.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Twitter</td>
+              <td><a href="#">http://www.twitter.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="section__row section__row--vertical section__row--naked">
-          <button class="button">
-            + add new
-          </button>
-          <div class="table__wrapper">
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__header">Home page</td>
-                <td><a href="#">http://www.homepage.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Currently offer</td>
-                <td><a href="#">http://www.currently.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Blurpix</td>
-                <td><a href="#">http://www.blurpix.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Your Site</td>
-                <td><a href="#">http://www.yoursite.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Google</td>
-                <td><a href="#">http://www.google.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Facebook</td>
-                <td><a href="#">http://www.facebook.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Dashboard</td>
-                <td><a href="#">http://www.dashboard.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Blurax</td>
-                <td><a href="#">http://www.blurax.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Piece of Wine</td>
-                <td><a href="#">http://www.pieceofwine.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Twitter</td>
-                <td><a href="#">http://www.twitter.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <button class="button">
-            + add new
-          </button>
-        </div>
+        <button class="button">
+          + add new
+        </button>
       </div>
     </section>
-    <section id="banners" class="section links">
-      <div class="container">
-        <div class="section__row section__row--left">
-          <h1>Banners</h1>
+    <section id="banners" class="main__section links">
+      <div class="main__section__row main__section__row--left">
+        <h1>Banners</h1>
+      </div>
+      <div class="main__section__row main__section__row--vertical main__section__row--naked">
+        <button class="button">
+          + add new
+        </button>
+        <div class="table__wrapper">
+          <table class="table">
+            <tr class="table__row">
+              <td class="table__header">Banner main</td>
+              <td><a href="#">http://www.homepage.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Sign up banner</td>
+              <td><a href="#">http://www.currently.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Banner left side</td>
+              <td><a href="#">http://www.blurpix.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Vertical banner</td>
+              <td><a href="#">http://www.yoursite.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Front banner</td>
+              <td><a href="#">http://www.google.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__header">Horizontal banner</td>
+              <td><a href="#">http://www.facebook.com</a></td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                </div>
+              </td>
+              <td>
+                <div class="table__icon">
+                  <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
+                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                      V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="section__row section__row--vertical section__row--naked">
-          <button class="button">
-            + add new
-          </button>
-          <div class="table__wrapper">
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__header">Banner main</td>
-                <td><a href="#">http://www.homepage.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Sign up banner</td>
-                <td><a href="#">http://www.currently.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Banner left side</td>
-                <td><a href="#">http://www.blurpix.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Vertical banner</td>
-                <td><a href="#">http://www.yoursite.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Front banner</td>
-                <td><a href="#">http://www.google.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__header">Horizontal banner</td>
-                <td><a href="#">http://www.facebook.com</a></td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                </td>
-                <td>
-                  <div class="table__icon">
-                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                      <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-                        V6H8z M5,6v8h1V6H5z"/>
-                    </svg>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <button class="button">
-            + add new
-          </button>
-        </div>
+        <button class="button">
+          + add new
+        </button>
       </div>
     </section>
-
   </main>
   <script src="./js/script.js" type="module"></script>
 </body>
