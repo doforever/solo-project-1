@@ -64,7 +64,7 @@ aside {
   display: block;
 }
 
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
   .header {
     width: $size-sidebar;
     position: fixed;
