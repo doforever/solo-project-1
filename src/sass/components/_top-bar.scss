@@ -1,10 +1,8 @@
 .top-bar {
-  @extend .sidebar;
-
   &__button {
     @extend .sidebar__section;
     @include flex (row, center, space-evenly);
-    padding-bottom: $padding-text/2;
+    padding-bottom: $padding-text/4;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -46,7 +44,7 @@
   }
 }
 
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
   .top-bar {
     background-color: $color-light;
     @include flex (row, center, flex-end);

@@ -2,11 +2,11 @@
   background-color: $color-dark;
 
   &__section {
-    padding: $padding-text/2 0 $padding-text 0;
+    padding: $padding-text/4 0 $padding-text/2 0;
     border-bottom: $border-style $color-header;
 
     &--first {
-      padding-top: $padding-text;
+      padding-top: 0;
     }
 
     &__title {
@@ -17,7 +17,7 @@
 
   &__menu-item {
     display: block;
-    line-height: $single-line-height;
+    line-height: $single-line-height - 5px;
     padding: 0 $padding-text;
     border-left: 5px solid transparent;
     color: $color-header;
@@ -29,11 +29,11 @@
 
     span {
       padding-left: $padding-sm;
-      line-height: $single-line-height;
+      line-height: $single-line-height - 3px;
     }
 
     i {
-      font-size: $size-icon;
+      font-size: $size-icon - 2;
     }
 
     &--active {
@@ -44,7 +44,7 @@
   }
 
   &__manager {
-    padding: $padding-text/2 $padding-text;
+    padding: $padding-text/4 $padding-text/2;
     @include flex (row, center, flex-start);
 
     img {
@@ -54,6 +54,26 @@
   }
 }
 
-// @media only screen and (max-width: $sidebar-max) {
+@media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
+  .sidebar {
+    &__section {
+      padding: $padding-text/2 0 $padding-text 0;
+    }
 
-// }
+    &__menu-item {
+      line-height: $single-line-height;
+
+      i {
+        font-size: $size-icon;
+      }
+
+      span {
+        line-height: $single-line-height;
+      }
+    }
+
+    &__manager {
+      padding: $padding-text/2 $padding-text;
+    }
+  }
+}
