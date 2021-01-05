@@ -39,8 +39,6 @@
   }
 
   &__icon {
-    width: $size-icon;
-    height: $size-icon;
-    fill: $color-light;
+    font-size: $size-icon;
   }
 }

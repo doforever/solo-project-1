@@ -26,11 +26,11 @@
   }
 
   &__icon {
-    height: 17px;
-    fill: $color-header;
+    color: $color-header;
+    font-size: $size-icon;
 
     &--sm {
-      height: 7px;
+      font-size: $size-icon-sm;
     }
   }
 

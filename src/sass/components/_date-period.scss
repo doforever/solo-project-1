@@ -20,13 +20,12 @@
   }
 
   &__icon {
-    width: $size-icon;
-    height: $size-icon;
     flex: 0 0 auto;
-    fill: $color-greys-l;
+    size: $size-icon;
+    color: $color-greys-l;
 
     &:hover {
-      fill: $color-dark;
+      color: $color-dark;
     }
   }
 }

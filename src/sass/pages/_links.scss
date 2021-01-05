@@ -7,24 +7,24 @@
   }
 
   table {
+    .table__icon {
+      color: $color-greys-d;
+
+      &:hover {
+        color: $color-warning;
+      }
+    }
+
     tr td:last-child {
       white-space: nowrap;
       width: 1%;
       padding-left: $padding-text/2;
-
-      .table__icon {
-        fill: $color-greys-d;
-      }
     }
 
     tr td:nth-child(3) {
       white-space: nowrap;
       width: 1%;
       padding-right: $padding-text/2;
-
-      .table__icon {
-        fill: $color-warning;
-      }
     }
   }
 }

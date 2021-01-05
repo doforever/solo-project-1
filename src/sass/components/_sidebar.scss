@@ -20,27 +20,20 @@
     line-height: $single-line-height;
     padding: 0 $padding-text;
     border-left: 5px solid transparent;
+    color: $color-header;
 
     &:hover {
       background-color: transparentize($color-greys-d, 0.8);
-
-      span {
-        color: $color-light;
-      }
-
-      svg {
-        fill: $color-light;
-      }
+      color: $color-light;
     }
 
     span {
       padding-left: $padding-sm;
-      color: $color-header;
+      line-height: $single-line-height;
     }
 
-    svg {
-      @include icon();
-      fill: $color-header;
+    i {
+      font-size: $size-icon;
     }
 
     &--active {
