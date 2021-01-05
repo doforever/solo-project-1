@@ -6,6 +6,11 @@
   &__row {
     height: $single-line-height;
     border-bottom: $border-style $color-greys-l;
+    line-height: $single-line-height;
+
+    &--flex {
+      @include flex (row, center, space-between);
+    }
 
     &:hover {
       background-color: $color-greys-xl;

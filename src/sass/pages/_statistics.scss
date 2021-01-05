@@ -6,21 +6,10 @@
 
   .table__wrapper {
     padding: 25px 0;
-
-    div {
-      min-width: $size-table/2;
-      padding: 0 33px;
-    }
   }
 
-  .table {
-    td {
-      padding: 0;
-    }
-
-    td:last-child {
-      text-align: right;
-    }
+  .main__section__col {
+    width: $size-table/2;
   }
 
   .chart__wrapper {
