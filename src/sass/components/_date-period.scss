@@ -1,17 +1,25 @@
 .date-period {
-  @extend input;
-  height: $single-line-height;
-  padding: 0 $padding-sm 0 0;
-  @include flex(row, center, space-between);
-  max-width: 300px;
+  max-width: 100%;
+  @include flex (row, center, space-between);
+
+  &__input-group {
+    @extend input;
+    height: $single-line-height;
+    padding: 0 $padding-sm 0 0;
+    @include flex(row, center, space-between);
+    min-width: 0;
+    max-width: $size-table/2 - $single-line-height - $padding-text;
+  }
 
   &__input {
     position: relative;
     border: none;
     outline: none;
     height: $single-line-height - 10px;
-    min-width: 100px;
     flex: 1;
+    padding: 8px;
+    font-size: $size-text - 1px;
+    min-width: 0;
   }
 
   &__input:first-child{
@@ -28,15 +36,22 @@
       color: $color-dark;
     }
   }
+
+  &__button {
+    flex: 0 0 auto;
+    margin-left: 8px;
+  }
 }
 
-@media only screen and (max-width: $sm) {
+@media only screen and (min-width: $sm) {
   .date-period {
     &__input {
-      text-align: center;
-      padding: 5px;
-      min-width: 70px;
-      font-size: $size-text - 1px;
+      padding: 0 $padding-text;
+      font-size: inherit;
+    }
+
+    &__button {
+      margin-left: $padding-text;
     }
   }
 }
