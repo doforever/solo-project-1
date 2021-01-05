@@ -1,18 +1,25 @@
 .top-bar {
   @extend .sidebar;
 
-  &__section {
+  &__button {
     @extend .sidebar__section;
     @include flex (row, center, space-evenly);
     padding-bottom: $padding-text/2;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-weight: $font-regular;
+    background-color: inherit;
+    outline: none;
+    width: 100%;
 
     &:hover {
       background-color: transparentize($color-greys-d, 0.8);
       color: $color-light;
       cursor: $custom-pointer;
 
-      svg {
-        fill: $color-light;
+      i {
+        color: inherit;
       }
 
       .top-bar__balance {
@@ -45,19 +52,17 @@
     @include flex (row, center, flex-end);
     border-bottom: $border-style $color-greys-l;
 
-    &__section {
+    &__button {
       padding: 0 $padding-sm;
       height: 100%;
       border-left: $border-style $color-greys-l;
       border-bottom: none;
+      width: auto;
 
       &:hover {
         background-color: $color-greys-xl;
         color: $color-header;
 
-        svg {
-          fill: $color-header;
-        }
       }
     }
   }

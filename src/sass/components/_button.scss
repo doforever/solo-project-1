@@ -10,6 +10,7 @@
   padding: 0 $padding-text;
   text-align: center;
   background-color: $color-warning;
+  outline: none;
 
   &:hover{
     background-color: $color-warning-l;
