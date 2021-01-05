@@ -16,8 +16,10 @@
   }
 
   &__menu-item {
+    display: block;
     line-height: $single-line-height;
     padding: 0 $padding-text;
+    border-left: 5px solid transparent;
 
     &:hover {
       background-color: transparentize($color-greys-d, 0.8);
@@ -42,7 +44,7 @@
     }
 
     &--active {
-      border-left: 5px solid $color-warning;
+      border-color: $color-warning;
       background-color: transparentize($color-greys-d, 0.8);
     }
 

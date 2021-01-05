@@ -60,7 +60,7 @@ const app = {
     }
     /* add class 'active' to matching links, remove from non-matching */
     for (let link of this.navLinks){
-      link.parentElement.classList.toggle(
+      link.classList.toggle(
         classNames.sidebar.navLinkActive,
         link.getAttribute('href') == '#' + pageId
       );

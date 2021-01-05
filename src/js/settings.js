@@ -17,7 +17,7 @@ export const select = {
     navLinks: '.sidebar__menu a',
   },
   main: {
-    pages: 'section',
+    pages: '.main__section',
   }
 };
 
