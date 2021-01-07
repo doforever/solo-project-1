@@ -12,11 +12,6 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin icon() {
-  max-width: $size-icon;
-  max-height: $size-icon;
-}
-
 @mixin grid($prefix) {
   @for $i from 1 through 12 {
     .col-#{$prefix}-#{$i} {
