@@ -1,5 +1,6 @@
 main {
   margin-left: 0;
+  margin-top: $size-top-bar + $padding-text;
 }
 
 .header {
@@ -62,7 +63,6 @@ main {
 @media only screen and (min-width: $mobile) and (min-height: $sidebar-max){
   .drop-down {
     max-height: 100%;
-
   }
 
   .header {
@@ -80,7 +80,6 @@ main {
 
   main {
     margin-left: $size-sidebar;
-    margin-top: $size-top-bar + $padding-text;
   }
 
   .top-bar {
