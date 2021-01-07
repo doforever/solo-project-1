@@ -21,8 +21,6 @@
 
 @media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
   .header {
-    width: $size-sidebar;
-
     &__toggle-menu {
       display: none;
     }

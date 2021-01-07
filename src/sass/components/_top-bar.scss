@@ -4,7 +4,7 @@
 
   &__button {
     @include flex (row, center, space-evenly);
-    padding-bottom: $padding-text/4;
+    padding: $padding-text/4;
     border: none;
     font-weight: $font-regular;
     background-color: inherit;
@@ -28,6 +28,10 @@
 
     &__item {
       padding: $padding-sm/2;
+
+      p {
+        margin: 0;
+      }
     }
   }
 
@@ -56,12 +60,10 @@
       height: 100%;
       border-left: $border-style $color-greys-l;
       flex: 0 0 auto;
-      // line-height: $size-top-bar;
 
       &:hover {
         background-color: $color-greys-xl;
         color: $color-header;
-
       }
     }
   }

@@ -23,7 +23,7 @@ main {
 }
 
 .main__section {
-  display: block;
+  display: none;
   background-color: $color-light;
   border: $border-style $color-greys-l;
   margin: $padding-text;
@@ -61,20 +61,21 @@ main {
 
 @media only screen and (min-width: $mobile) and (min-height: $sidebar-max){
   .drop-down {
-    position: fixed;
-    top: $size-top-bar;
-    left: 0;
     max-height: 100%;
-    width: $size-sidebar;
+
+  }
+
+  .header {
+    @include flex (row, center, space-between);
+    align-items: stretch;
   }
 
   .sidebar {
     height: 100%;
-  }
-
-  .header {
-    width: $size-sidebar;
     position: fixed;
+    left: 0;
+    top: $size-top-bar;
+    width: $size-sidebar;
   }
 
   main {
@@ -83,11 +84,12 @@ main {
   }
 
   .top-bar {
-    position: fixed;
-    width: 100%;
     height: $size-top-bar;
-    top: 0;
-    left: 0;
+  }
+
+  .header__min {
+    width: $size-sidebar;
+    flex: 0 0 auto;
   }
 
 }
