@@ -1,9 +1,12 @@
 .links {
   .table__wrapper {
-    max-width: $size-table;
-    margin: 0 auto;
     padding: $padding-text 0;
-    overflow: auto;
+    overflow-x: auto;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
   }
 
   table {

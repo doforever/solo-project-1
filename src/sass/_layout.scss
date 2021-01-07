@@ -31,7 +31,7 @@ main {
 
   &__row {
     border-bottom: $border-style $color-greys-l;
-    padding: $padding-sm $padding-text;
+    padding: $padding-text;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -48,11 +48,6 @@ main {
       display: block;
       text-align: center;
     }
-  }
-
-  &__col {
-    flex: 0 1 auto;
-    padding: 0 33px;
   }
 }
 
@@ -91,4 +86,20 @@ main {
     flex: 0 0 auto;
   }
 
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+}
+
+@media(min-width: $mobile) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
 }

@@ -16,3 +16,14 @@
   max-width: $size-icon;
   max-height: $size-icon;
 }
+
+@mixin grid($prefix) {
+  @for $i from 1 through 12 {
+    .col-#{$prefix}-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      max-width: $width;
+      padding: 0 $padding-sm;
+    }
+  }
+}
