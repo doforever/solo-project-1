@@ -1,9 +1,12 @@
 .header {
   background-color: $color-dark;
-  @include flex (row, center, space-between);
-  height: $size-top-bar;
   width: 100%;
-  padding: 0 $padding-text;
+
+  &__min {
+    @include flex (row, center, space-between);
+    height: $size-top-bar;
+    padding: 0 $padding-text;
+  }
 
   &__toggle-menu {
     color: $color-greys-l;

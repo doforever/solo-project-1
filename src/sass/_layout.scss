@@ -5,30 +5,25 @@ main {
 .header {
   top: 0;
   left: 0;
-  position: sticky;
+  position: fixed;
   z-index: 2;
 }
 
-aside {
-  top: $size-top-bar;
-  left: -$size-sidebar;
-  width: $size-sidebar;
-  height: 100%;
-  min-height: 340px;
-  position: fixed;
+.drop-down {
+  max-height: 0;
+  width: 100%;
   z-index: 1;
-  background-color: $color-dark;
-  transition: $transition;
-  overflow: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 .expanded {
-  left: 0;
+  max-height: 1000px;
   transition: $transition;
 }
 
 .main__section {
-  display: none;
+  display: block;
   background-color: $color-light;
   border: $border-style $color-greys-l;
   margin: $padding-text;
@@ -65,6 +60,18 @@ aside {
 }
 
 @media only screen and (min-width: $mobile) and (min-height: $sidebar-max){
+  .drop-down {
+    position: fixed;
+    top: $size-top-bar;
+    left: 0;
+    max-height: 100%;
+    width: $size-sidebar;
+  }
+
+  .sidebar {
+    height: 100%;
+  }
+
   .header {
     width: $size-sidebar;
     position: fixed;
@@ -75,10 +82,6 @@ aside {
     margin-top: $size-top-bar + $padding-text;
   }
 
-  aside {
-    left: 0;
-  }
-
   .top-bar {
     position: fixed;
     width: 100%;
@@ -86,4 +89,5 @@ aside {
     top: 0;
     left: 0;
   }
+
 }

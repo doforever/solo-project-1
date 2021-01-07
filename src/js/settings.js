@@ -13,8 +13,8 @@ export const select = {
     menuToggleBtn : '.header__toggle-menu',
   },
   sidebar: {
-    sidebar: 'aside',
-    navLinks: '.sidebar__menu a',
+    sidebar: '.drop-down',
+    navLinks: '.sidebar__menu-item',
   },
   main: {
     pages: '.main__section',

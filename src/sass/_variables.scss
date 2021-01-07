@@ -51,11 +51,10 @@ $sm: 600px;
 $mobile: 768px;
 $sidebar-max: 736px;
 
-
-
 /* Icons */
 $custom-pointer: url(../images/finger-cursor.png), auto;
 $custom-calendar-picker: url(../images/calendar.svg);
 
 /* Transitions */
-$transition: all .5s;
+$transition: all 2s;
+
