@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="./vendor/Glyphter.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header__min">
@@ -390,66 +392,80 @@
         </div>
       </div>
     </section>
-    <section id="personal_data" class="main__section">
+    <section id="personal_data" class="main__section personal-data">
       <header class="main__section__row main__section__row--left">
         <h1>Personal data</h1>
       </header>
-      <div class="main__section__row main__section__row--naked">
-        <div class="col-sm-12 col-lg-10 col-xl-8">
-          <form class="form" action="">
-            <fieldset class="form__input-group">
-              <div class="form__field">
-                <label class="form__label" for="name">Name</label>
-                <input class="form__input" type="text" name="name" id="name" value="Leonardo">
+      <form class="form" action="">
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="name">Name</label>
+              <input class="form__field__input" type="text" name="name" id="name" value="Leonardo">
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="surname">Surname</label>
+              <input class="form__field__input" type="text" name="surname" id="surname" value="Dicaprio">
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="email">E-mail</label>
+              <input class="form__field__input" type="email" name="email" id="email" value="leo@gmail.com">
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="phone">Phone number</label>
+              <input class="form__field__input" type="text" name="phone" id="phone" value="+1 432 55 00 44">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="skype">Skype</label>
+              <input class="form__field__input" type="text" name="skype" id="skype" value="Leonardo.D">
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="icq">ICQ</label>
+              <input class="form__field__input" type="text" name="icq" id="icq">
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="msn">Msn</label>
+              <input class="form__field__input" type="text" name="msn" id="msn">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="wallet">Wallet</label>
+              <input class="form__field__input" type="text" name="wallet" id="wallet">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="password">Password</label>
+              <div class="password-wrapper">
+                <i class="icon-password password-icon"></i>
+                <input class="form__field__input form__field__input--password" type="password" name="password" id="password">
               </div>
-              <div class="form__field">
-                <label class="form__label" for="surname">Surname</label>
-                <input class="form__input" type="text" name="surname" id="surname" value="Dicaprio">
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="repeat">Repeat</label>
+              <div class="password-wrapper">
+                <i class="icon-password password-icon"></i>
+                <input class="form__field__input form__field__input--password" type="password" name="repeat" id="repeat">
               </div>
-              <div class="form__field">
-                <label class="form__label" for="email">E-mail</label>
-                <input class="form__input" type="email" name="email" id="email" value="leo@gmail.com">
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="phone">Phone number</label>
-                <input class="form__input" type="text" name="phone" id="phone" value="+1 432 55 00 44">
-              </div>
-            </fieldset>
-            <fieldset class="form__input-group">
-              <div class="form__field">
-                <label class="form__label" for="skype">Skype</label>
-                <input class="form__input" type="text" name="skype" id="skype" value="Leonardo.D">
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="icq">ICQ</label>
-                <input class="form__input" type="text" name="icq" id="icq">
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="msn">Msn</label>
-                <input class="form__input" type="text" name="msn" id="msn">
-              </div>
-            </fieldset>
-            <fieldset class="form__input-group">
-              <div class="form__field">
-                <label class="form__label" for="wallet">Wallet</label>
-                <input class="form__input" type="text" name="wallet" id="wallet">
-              </div>
-            </fieldset>
-            <fieldset class="form__input-group">
-              <div class="form__field">
-                <label class="form__label" for="password">Password</label>
-                <input class="form__input" type="password" name="password" id="password">
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="repeat">Repeat</label>
-                <input class="form__input" type="password" name="repeat" id="repeat">
-              </div>
-            </fieldset>
-          </form>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row">
+          <button class="button" type="submit">Save</button>
         </div>
-      </div>
+      </form>
     </section>
   </main>
   <script src="./js/script.js" type="module"></script>
 </body>
+
 </html>

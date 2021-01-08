@@ -3,12 +3,26 @@
   @include flex (row, center, space-between);
 
   &__input-group {
-    @extend input;
+    border: 1px solid $color-greys-l;
+    border-radius: $radius;
+    cursor: $custom-pointer;
     height: $single-line-height;
     padding: 0 $padding-sm 0 0;
     @include flex(row, center, space-between);
     min-width: 0;
     max-width: $size-table/2 - $single-line-height - $padding-text;
+
+    &:hover {
+      border-color: $color-greys-d;
+
+      .date-period__input {
+        color: $color-dark;
+
+        &::placeholder {
+          color: $color-dark;
+        }
+      }
+    }
   }
 
   &__input {
@@ -20,6 +34,10 @@
     padding: 8px;
     font-size: $size-text - 1px;
     min-width: 0;
+
+    &::placeholder {
+      color: $color-greys;
+    }
   }
 
   &__input:first-child{
@@ -55,3 +73,4 @@
     }
   }
 }
+

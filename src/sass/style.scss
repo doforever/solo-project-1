@@ -8,15 +8,16 @@
 @import "./components/button";
 @import "./components/chart";
 @import "./components/date-period";
-@import "./components/password";
 @import "./components/notification";
 @import "./components/header";
 @import "./components/sidebar";
 @import "./components/top-bar";
 @import "./components/table";
+@import "./components/form";
 
 /* Sections */
 
 /* Pages / Views */
 @import "./pages/statistics";
 @import "./pages/links";
+@import "./pages/personal-data";

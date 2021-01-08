@@ -55,6 +55,13 @@ main {
   display: block;
 }
 
+.row {
+  @include flex (row, center, space-between);
+  flex-wrap: wrap;
+}
+
+@include grid('sm');
+
 @media only screen and (min-width: $mobile) and (min-height: $sidebar-max){
   .drop-down {
     max-height: 100%;
@@ -86,10 +93,6 @@ main {
     flex: 0 0 auto;
   }
 
-}
-
-@media(max-width: 767px) {
-  @include grid('sm');
 }
 
 @media(min-width: $mobile) {
