@@ -26,5 +26,6 @@ export const settings = {
     general: ['statistics', 'links'],
     links: ['links'],
     banners: ['banners'],
+    personal_data: ['personal_data'],
   }
 };
