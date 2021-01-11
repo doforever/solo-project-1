@@ -8,6 +8,7 @@ export const classNames = {
   },
   form: {
     invalidInput: 'invalid',
+    messageVisible: 'message',
   }
 };
 
@@ -26,6 +27,7 @@ export const select = {
     wrapper: '.personal-data form',
     input: 'input',
     password: 'input[name="password"]',
+    validityMessage: '.message',
   },
 };
 

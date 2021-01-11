@@ -23,7 +23,6 @@ class Form {
       event.preventDefault();
       this.validateForm();
       if (this.validity) console.log('submit form');
-      else console.log('invalid form');
     });
   }
 
@@ -62,15 +61,15 @@ class Form {
   }
 
   updateMessage(input, message) {
-    let messageElement = input.parentElement.querySelector('.message');
+    let messageElement = input.parentElement.querySelector(select.form.validityMessage);
     if (!messageElement && message){
       messageElement = document.createElement('div');
-      messageElement.classList.add('message');
+      messageElement.classList.add(classNames.form.messageVisible);
       messageElement.innerText = message;
       input.parentElement.append(messageElement);
     } else if (messageElement) {
       messageElement.innerText = message;
-      messageElement.classList.toggle('message', message);
+      messageElement.classList.toggle(classNames.form.messageVisible, message);
     }
   }
 }

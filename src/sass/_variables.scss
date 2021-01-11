@@ -58,3 +58,14 @@ $custom-calendar-picker: url(../images/calendar.svg);
 /* Transitions */
 $transition: all 2s;
 
+/* Animations */
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+

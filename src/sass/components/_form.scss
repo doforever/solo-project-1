@@ -62,16 +62,13 @@
 
   .message {
     position: absolute;
-    top: -13px;
     left: 0;
+    top: -13px;
     font-size: $size-textarea;
     color: $color-danger;
     transition: $transition;
-  }
-
-  .message-hidden {
-    opacity: 0;
-    transition: $transition;
+    animation-duration: 1s;
+    animation-name: appear;
   }
 
   .password-icon {
@@ -82,5 +79,15 @@
     left: $padding-sm;
     transform: translateY(-50%);
     pointer-events: none;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
