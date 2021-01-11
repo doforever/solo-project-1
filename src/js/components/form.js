@@ -29,20 +29,25 @@ class Form {
 
   validate(input) {
     let validity = true;
+    let validityMessage = '';
 
     /* check if required input is not empty */
     if (input.required && !input.value) {
       validity = false;
+      validityMessage = 'This field is required';
     }
 
     /* check if password is correcty repeated */
     if (input.type === 'password'
       && input.name === 'repeat'
+      && input.value
       && this.dom.querySelector(select.form.password).value != input.value) {
       validity = false;
+      validityMessage = 'Incorrect password';
     }
 
     input.classList.toggle(classNames.form.invalidInput, !validity);
+    this.updateMessage(input, validityMessage);
     return validity;
   }
 
@@ -53,6 +58,19 @@ class Form {
       if (!inputValidity) {
         this.validity = false;
       }
+    }
+  }
+
+  updateMessage(input, message) {
+    let messageElement = input.parentElement.querySelector('.message');
+    if (!messageElement && message){
+      messageElement = document.createElement('div');
+      messageElement.classList.add('message');
+      messageElement.innerText = message;
+      input.parentElement.append(messageElement);
+    } else if (messageElement) {
+      messageElement.innerText = message;
+      messageElement.classList.toggle('message', message);
     }
   }
 }

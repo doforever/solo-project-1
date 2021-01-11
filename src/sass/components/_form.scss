@@ -60,6 +60,20 @@
     }
   }
 
+  .message {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    font-size: $size-textarea;
+    color: $color-danger;
+    transition: $transition;
+  }
+
+  .message-hidden {
+    opacity: 0;
+    transition: $transition;
+  }
+
   .password-icon {
     z-index: 1;
     color: $color-greys;
