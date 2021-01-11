@@ -1,10 +1,13 @@
 import { classNames, select, settings } from './settings.js';
+import Form from './components/form.js';
 
 const app = {
   init: function() {
     this.getElements();
     this.initActions();
     this.initPages();
+    this.initForm();
+    console.log('thisApp', this);
   },
 
   getElements: function() {
@@ -66,6 +69,11 @@ const app = {
       );
     }
   },
+
+  initForm: function() {
+    const formElement = document.querySelector(select.form.wrapper);
+    this.form = new Form(formElement);
+  }
 };
 
 app.init();

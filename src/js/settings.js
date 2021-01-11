@@ -5,6 +5,9 @@ export const classNames = {
   },
   pages: {
     active: 'page-active',
+  },
+  form: {
+    invalidInput: 'invalid',
   }
 };
 
@@ -18,7 +21,12 @@ export const select = {
   },
   main: {
     pages: '.main__section',
-  }
+  },
+  form: {
+    wrapper: '.personal-data form',
+    input: 'input',
+    password: 'input[name="password"]',
+  },
 };
 
 export const settings = {

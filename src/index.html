@@ -396,25 +396,25 @@
       <header class="main__section__row main__section__row--left">
         <h1>Personal data</h1>
       </header>
-      <form class="form" action="">
+      <form novalidate class="form" action="">
         <fieldset class="row form__input-group">
           <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
             <div class="form__field">
               <label class="form__field__label" for="name">Name</label>
               <div class="form__field__input-wrapper">
-                <input class="form__field__input" type="text" name="name" id="name" value="Leonardo">
+                <input class="form__field__input" type="text" name="name" id="name" value="Leonardo" required>
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="surname">Surname</label>
               <div class="form__field__input-wrapper">
-                <input class="form__field__input" type="text" name="surname" id="surname" value="Dicaprio">
+                <input class="form__field__input" type="text" name="surname" id="surname" value="Dicaprio" required>
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="email">E-mail</label>
               <div class="form__field__input-wrapper">
-                <input class="form__field__input" type="email" name="email" id="email" value="leo@gmail.com">
+                <input class="form__field__input" type="email" name="email" id="email" value="leo@gmail.com" required>
               </div>
             </div>
             <div class="form__field">
@@ -463,14 +463,14 @@
               <label class="form__field__label" for="password">Password</label>
               <div class="form__field__input-wrapper">
                 <i class="icon-password password-icon"></i>
-                <input class="form__field__input form__field__input--password" type="password" name="password" id="password">
+                <input class="form__field__input form__field__input--password" type="password" name="password" id="password" required>
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="repeat">Repeat</label>
               <div class="form__field__input-wrapper">
                 <i class="icon-password password-icon"></i>
-                <input class="form__field__input form__field__input--password" type="password" name="repeat" id="repeat">
+                <input class="form__field__input form__field__input--password" type="password" name="repeat" id="repeat" required>
               </div>
             </div>
           </div>
