@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="popup__background">
   <header class="header">
     <div class="header__min">
       <img src="./images/logo.png" alt="Just do it">
@@ -89,7 +89,7 @@
             <p>Leonardo Di Caprio</p>
           </div>
         </a>
-        <a class="top-bar__button">
+        <a class="top-bar__button quit">
           <div class="top-bar__button__item">
             <i class="icon-quit top-bar__icon"></i>
           </div>
@@ -481,6 +481,18 @@
       </form>
     </section>
   </main>
+  <script id="template-popup-confirm" type="text/x-handlebars-template">
+    <div class="popup popup--confirm">
+      <header class="popup__header">
+        <h2>{{ question }}</h2>
+      </header>
+      <section class="popup__section">
+        <button id='cancel' class="button button--grey popup__button">{{ cancellation }}</button>
+        <button id='confirm' class="button popup__button">{{ confirmation }}</button>
+      </section>
+    </div>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="./js/script.js" type="module"></script>
 </body>
 

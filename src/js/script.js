@@ -1,12 +1,14 @@
 import { classNames, select, settings } from './settings.js';
 import Form from './components/form.js';
+import Popup from './components/popup.js';
 
 const app = {
   init: function() {
     this.getElements();
-    this.initActions();
-    this.initPages();
+    this.initPopups();
     this.initForm();
+    this.initPages();
+    this.initActions();
     console.log('thisApp', this);
   },
 
@@ -16,11 +18,16 @@ const app = {
     this.dom.sidebar = document.querySelector(select.sidebar.sidebar);
     this.pages = document.querySelectorAll(select.main.pages);
     this.navLinks = document.querySelectorAll(select.sidebar.navLinks);
+    this.dom.quit = document.querySelector(select.topBar.quit);
   },
 
   initActions: function() {
     this.dom.menuToggle.addEventListener('click', () => {
       this.dom.sidebar.classList.toggle(classNames.sidebar.sidebarExpaded);
+    });
+
+    this.dom.quit.addEventListener('click', () => {
+      this.popupConfirm.toggle();
     });
   },
 
@@ -73,6 +80,10 @@ const app = {
   initForm: function() {
     const formElement = document.querySelector(select.form.wrapper);
     this.form = new Form(formElement);
+  },
+
+  initPopups: function() {
+    this.popupConfirm = new Popup (settings.popup.questionQuit, settings.popup.confirmationQuit);
   }
 };
 
