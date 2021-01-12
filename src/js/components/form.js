@@ -36,11 +36,20 @@ class Form {
       validityMessage = 'This field is required';
     }
 
+    /* check if email is email */
+
+    if (input.value && input.type === 'email') {
+      if (input.value.search(/.{1,}@.{1,}/g) === -1) {
+        validity = false;
+        validityMessage = 'Incorrect email';
+      }
+    }
+
     /* check if password is correcty repeated */
     if (input.type === 'password'
       && input.name === 'repeat'
       && input.value
-      && this.dom.querySelector(select.form.password).value != input.value) {
+      && this.dom.querySelector(select.form.typePassword).value != input.value) {
       validity = false;
       validityMessage = 'Incorrect password';
     }

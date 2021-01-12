@@ -39,7 +39,7 @@ export const select = {
   form: {
     wrapper: '.personal-data form',
     input: 'input',
-    password: 'input[name="password"]',
+    typePassword: 'input[type="password"]',
     validityMessage: '.message',
   },
   template: {
