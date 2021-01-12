@@ -1,6 +1,6 @@
 import { classNames, select, settings } from './settings.js';
 import Form from './components/form.js';
-import Popup from './components/popup.js';
+import Confirm from './components/confirm.js';
 
 const app = {
   init: function() {
@@ -27,7 +27,7 @@ const app = {
     });
 
     this.dom.quit.addEventListener('click', () => {
-      this.popupConfirm.toggle();
+      this.popupConfirm.open();
     });
   },
 
@@ -83,7 +83,7 @@ const app = {
   },
 
   initPopups: function() {
-    this.popupConfirm = new Popup (settings.popup.questionQuit, settings.popup.confirmationQuit);
+    this.popupConfirm = new Confirm (settings.popup.questionQuit, settings.popup.confirmationQuit);
   }
 };
 

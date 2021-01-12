@@ -1,49 +1,48 @@
-import {templates, settings, select, classNames} from '../settings.js';
+import {select, classNames} from '../settings.js';
 
 class Popup {
-  constructor(question, confirmation, cancellation) {
+  constructor() {
+    this.getBackground();
+    this.dataObject = null;
+    this.template = null;
+  }
+
+  getBackground() {
     this.dom = {};
-    const dataObject = this.prepareData(question, confirmation, cancellation);
-    this.render(dataObject);
+    this.dom.background = document.querySelector(select.popup.background);
+  }
+
+  render() {
+    let parentDiv = document.createElement('div');
+    if (this.template) {parentDiv.innerHTML = this.template(this.dataObject).trim();}
+    this.dom.element = parentDiv.firstChild;
+    if (this.dom.element) this.dom.background.appendChild(this.dom.element);
+    console.log(this.dom.element);
+  }
+
+  getElements() {}
+
+  initActions() {}
+
+  show() {
+    this.dom.element.classList.add(classNames.popup.visible);
+  }
+
+  open() {
+    this.toggleBackgroundVisibility();
+    this.render();
     this.getElements();
     this.initActions();
+    this.show();
   }
 
-  prepareData(question, confirmation = settings.popup.confirmationDefault, cancellation = settings.popup.cancellationDefault) {
-    const dataObject = {
-      question: question,
-      confirmation: confirmation,
-      cancellation: cancellation,
-    };
-    return dataObject;
+  close() {
+    this.dom.element.remove();
+    this.toggleBackgroundVisibility();
   }
 
-  render(dataObject) {
-    const div = document.createElement('div');
-    div.innerHTML = templates.popupConfirm(dataObject);
-    this.dom.background = document.querySelector(select.popup.background);
-    this.dom.background.appendChild(div);
-  }
-
-  getElements() {
-    this.dom.element = document.querySelector(select.popup.popupConfirm);
-    this.dom.confirm = this.dom.element.querySelector(select.popup.buttonConfirm);
-    this.dom.cancel = this.dom.element.querySelector(select.popup.buttonCancel);
-    console.log(this);
-  }
-
-  initActions() {
-    this.dom.confirm.addEventListener('click', () => {
-      this.toggle();
-    });
-    this.dom.cancel.addEventListener('click', () => {
-      this.toggle();
-    });
-  }
-
-  toggle() {
+  toggleBackgroundVisibility() {
     this.dom.background.classList.toggle(classNames.popup.backgroundVisible);
-    this.dom.element.classList.toggle(classNames.popup.visible);
   }
 }
 
