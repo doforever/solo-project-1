@@ -6,6 +6,10 @@
 
   .table__wrapper {
     padding: 25px 0;
+
+    .table__row {
+      pointer-events: none;
+    }
   }
 
   .main__section__col {
