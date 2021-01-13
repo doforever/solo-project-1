@@ -30,13 +30,15 @@ class Chat extends Popup {
   }
 
   getElements() {
-    this.dom.confirm = this.dom.element.querySelector(select.popup.buttonConfirm);
+    this.dom.send = this.dom.element.querySelector(select.popup.buttonConfirm);
   }
 
   initActions() {
     super.initActions();
 
-    this.dom.confirm.addEventListener('click', () => {
+    this.dom.send.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.hideBackground();
       this.close();
     });
   }

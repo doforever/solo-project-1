@@ -5,7 +5,6 @@ class Contact {
     this.nick = dataSource[type][id].nick;
     this.avatar = dataSource[type][id].avatar;
     this.status = dataSource[type][id].status;
-    console.log('new contact', this);
   }
 }
 
