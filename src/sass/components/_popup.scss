@@ -80,8 +80,8 @@
   }
 
   &__message {
-    @extend .form__field__input;
-    @extend .form__field__input--password;
+    @extend .form__input;
+    @extend .form__input--password;
   }
 
   &__background {
