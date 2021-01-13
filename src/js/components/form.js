@@ -10,7 +10,6 @@ class Form {
 
   getElements() {
     this.allInputs = this.dom.querySelectorAll(select.form.input);
-    console.log('all inputs', this.allInputs);
   }
 
   initActions() {

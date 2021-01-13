@@ -13,6 +13,7 @@ export const classNames = {
   popup: {
     visible: 'popup--visible',
     backgroundVisible: 'popup__background--visible',
+    buttonClose: 'js--close-modal',
   }
 };
 
@@ -20,8 +21,8 @@ export const select = {
   popup: {
     background: '.popup__background',
     popupConfirm: '.popup--confirm',
-    buttonConfirm: '.popup #confirm',
-    buttonCancel: '.popup #cancel',
+    buttonConfirm: '.popup .js--confirm',
+    buttonsClose: '.popup .js--close-modal',
   },
   header: {
     menuToggleBtn : '.header__toggle-menu',

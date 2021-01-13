@@ -18,15 +18,12 @@ class Confirm extends Popup {
 
   getElements() {
     this.dom.confirm = this.dom.element.querySelector(select.popup.buttonConfirm);
-    this.dom.cancel = this.dom.element.querySelector(select.popup.buttonCancel);
   }
 
   initActions() {
+    super.initActions();
+
     this.dom.confirm.addEventListener('click', () => {
-      console.log('confirm click', this);
-      this.close();
-    });
-    this.dom.cancel.addEventListener('click', () => {
       this.close();
     });
   }

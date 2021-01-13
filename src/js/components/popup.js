@@ -1,8 +1,9 @@
-import {select, classNames} from '../settings.js';
+import { select, classNames } from '../settings.js';
 
 class Popup {
   constructor() {
     this.getBackground();
+    this.initGlobalActions();
     this.dataObject = null;
     this.template = null;
   }
@@ -14,15 +15,35 @@ class Popup {
 
   render() {
     let parentDiv = document.createElement('div');
-    if (this.template) {parentDiv.innerHTML = this.template(this.dataObject).trim();}
+    if (this.template) { parentDiv.innerHTML = this.template(this.dataObject).trim(); }
     this.dom.element = parentDiv.firstChild;
     if (this.dom.element) this.dom.background.appendChild(this.dom.element);
-    console.log(this.dom.element);
   }
 
-  getElements() {}
+  getElements() {
 
-  initActions() {}
+  }
+
+  initGlobalActions() {
+    document.addEventListener('keyup', (event) => {
+      if (event.key === 'Escape') {
+        this.close();
+      }
+    });
+
+    this.dom.background.addEventListener('click', () => {
+      this.close();
+    });
+  }
+
+  initActions() {
+    this.dom.element.addEventListener('click', (event) => {
+      event.stopPropagation();
+      if (event.target.classList.contains(classNames.popup.buttonClose)) {
+        this.close();
+      }
+    });
+  }
 
   show() {
     this.dom.element.classList.add(classNames.popup.visible);
@@ -37,8 +58,8 @@ class Popup {
   }
 
   close() {
-    this.dom.element.remove();
     this.toggleBackgroundVisibility();
+    this.dom.element.remove();
   }
 
   toggleBackgroundVisibility() {

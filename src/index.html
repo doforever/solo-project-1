@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="popup__background">
+<body>
   <header class="header">
     <div class="header__min">
       <img src="./images/logo.png" alt="Just do it">
@@ -481,17 +481,19 @@
       </form>
     </section>
   </main>
-  <script id="template-popup-confirm" type="text/x-handlebars-template">
-    <div class="popup popup--confirm">
-      <header class="popup__header">
-        <h2>{{ question }}</h2>
-      </header>
-      <section class="popup__section">
-        <button id='cancel' class="button button--grey popup__button">{{ cancellation }}</button>
-        <button id='confirm' class="button popup__button">{{ confirmation }}</button>
-      </section>
-    </div>
-  </script>
+  <div class="popup__background">
+    <script id="template-popup-confirm" type="text/x-handlebars-template">
+      <div class="popup popup--confirm">
+        <header class="popup__header">
+          <h2>{{ question }}</h2>
+        </header>
+        <section class="popup__section">
+          <button class="button button--grey popup__button js--close-modal">{{ cancellation }}</button>
+          <button class="button popup__button js--confirm">{{ confirmation }}</button>
+        </section>
+      </div>
+    </script>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="./js/script.js" type="module"></script>
 </body>
