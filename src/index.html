@@ -401,25 +401,25 @@
           <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
             <div class="form__field">
               <label class="form__field__label" for="name">Name</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="text" name="name" id="name" value="Leonardo" required>
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="surname">Surname</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="text" name="surname" id="surname" value="Dicaprio" required>
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="email">E-mail</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="email" name="email" id="email" value="leo@gmail.com" required>
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="phone">Phone number</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="text" name="phone" id="phone" value="+1 432 55 00 44" required>
               </div>
             </div>
@@ -429,19 +429,19 @@
           <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
             <div class="form__field">
               <label class="form__field__label" for="skype">Skype</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="text" name="skype" id="skype" value="Leonardo.D">
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="icq">ICQ</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="text" name="icq" id="icq">
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="msn">Msn</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="text" name="msn" id="msn">
               </div>
             </div>
@@ -451,7 +451,7 @@
           <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
             <div class="form__field">
               <label class="form__field__label" for="wallet">Wallet</label>
-              <div class="form__field__input-wrapper">
+              <div class="form__input-wrapper">
                 <input class="form__field__input" type="text" name="wallet" id="wallet">
               </div>
             </div>
@@ -461,15 +461,15 @@
           <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
             <div class="form__field">
               <label class="form__field__label" for="password">Password</label>
-              <div class="form__field__input-wrapper">
-                <i class="icon-password password-icon"></i>
+              <div class="form__input-wrapper">
+                <i class="icon-password form__input__icon"></i>
                 <input class="form__field__input form__field__input--password" type="password" name="password" id="password" required>
               </div>
             </div>
             <div class="form__field">
               <label class="form__field__label" for="repeat">Repeat</label>
-              <div class="form__field__input-wrapper">
-                <i class="icon-password password-icon"></i>
+              <div class="form__input-wrapper">
+                <i class="icon-password form__input__icon"></i>
                 <input class="form__field__input form__field__input--password" type="password" name="repeat" id="repeat" required>
               </div>
             </div>
@@ -487,31 +487,35 @@
         <header class="popup__header">
           <h2>{{ question }}</h2>
         </header>
-        <section class="popup__section">
+        <section class="popup__section popup__section--right">
           <button class="button button--grey popup__button js--close-modal">{{ cancellation }}</button>
           <button class="button popup__button js--confirm">{{ confirmation }}</button>
         </section>
       </div>
     </script>
     <script id="template-popup-chat" type="text/x-handlebars-template">
-      <div class="popup popup--chat">
+      <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6 popup popup--modal">
         <header class="popup__header">
           <h1>{{ title }}</h1>
         </header>
         <section class="popup__section">
-          <div class="popup__section__col">
-            <img src="{{ contactAvatar }}" alt="manager image">
-          </div>
-          <div class="popup__section__col">
-            <p class="popup__contactName">{{ contactName }}</p>
-            <div class="popup__contactStatus"> {{ contactStatus }} </div>
+          <div class="row row--left">
+            <div class="popup__section__col">
+              <img src="{{ contactAvatar }}" alt="manager image">
+            </div>
+            <div class="popup__section__col">
+              <p class="popup__contact-name">{{ contactName }}</p>
+              <p class="popup__contact-status"> {{ contactStatus }} </p>
+            </div>
           </div>
         </section>
         <section class="popup__section popup__conversation"></section>
         <section class="popup__section">
-          <form>
-            <i class="icon-message popup__message__icon"></i>
-            <input type="text" class="popup__message" placeholder="Enter the message..">
+          <form class="row popup__row">
+            <div class="popup__message-wrapper">
+              <i class="icon-message form__input__icon"></i>
+              <input type="text" class="popup__message" placeholder="Enter the message..">
+            </div>
             <button class="button popup__button js--confirm">Send</button>
           </form>
         </section>

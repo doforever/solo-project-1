@@ -11,6 +11,7 @@
   text-align: center;
   background-color: $color-warning;
   outline: none;
+  flex: 0 0 auto;
 
   &:hover{
     background-color: $color-warning-l;

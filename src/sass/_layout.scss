@@ -58,6 +58,10 @@ main {
 .row {
   @include flex (row, center, space-between);
   flex-wrap: wrap;
+
+  &--left {
+    justify-content: flex-start;
+  }
 }
 
 @include grid('sm');

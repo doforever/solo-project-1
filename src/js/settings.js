@@ -8,7 +8,7 @@ export const classNames = {
   },
   form: {
     invalidInput: 'invalid',
-    messageVisible: 'message',
+    messageVisible: 'form__message',
   },
   popup: {
     visible: 'popup--visible',
@@ -42,7 +42,7 @@ export const select = {
     wrapper: '.personal-data form',
     input: 'input',
     typePassword: 'input[type="password"]',
-    validityMessage: '.message',
+    validityMessage: '.form__message',
   },
   template: {
     popupConfirm: '#template-popup-confirm',

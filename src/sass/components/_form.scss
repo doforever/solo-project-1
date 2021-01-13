@@ -39,28 +39,19 @@
         padding-left: 51px;
       }
     }
+  }
 
-    &__input-wrapper {
-      position: relative;
+  &__input-wrapper {
+    position: relative;
 
-      &:hover {
-        .password-icon {
-          color: $color-dark;
-        }
+    &:hover {
+      .form__input__icon {
+        color: $color-dark;
       }
     }
   }
 
-  .invalid {
-    border: 2px solid $color-danger;
-    outline: $color-danger;
-
-    &:hover {
-      border-color: $color-danger;
-    }
-  }
-
-  .message {
+  &__message {
     position: absolute;
     left: 0;
     top: -13px;
@@ -71,13 +62,22 @@
     animation-name: appear;
   }
 
-  .password-icon {
-    z-index: 1;
-    color: $color-greys;
-    position: absolute;
-    top: 50%;
-    left: $padding-sm;
-    transform: translateY(-50%);
-    pointer-events: none;
+  .invalid {
+    border: 2px solid $color-danger;
+    outline: $color-danger;
+
+    &:hover {
+      border-color: $color-danger;
+    }
   }
+}
+
+.form__input__icon {
+  z-index: 1;
+  color: $color-greys;
+  position: absolute;
+  top: 50%;
+  left: $padding-sm;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
