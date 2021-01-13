@@ -30,6 +30,7 @@ export const select = {
   sidebar: {
     sidebar: '.drop-down',
     navLinks: '.sidebar__menu-item',
+    managerLink: '.sidebar__manager a',
   },
   topBar: {
     quit: 'nav.top-bar .quit',
@@ -45,6 +46,7 @@ export const select = {
   },
   template: {
     popupConfirm: '#template-popup-confirm',
+    popupChat: '#template-popup-chat',
   }
 };
 
@@ -60,9 +62,12 @@ export const settings = {
     cancellationDefault: 'Cancel',
     confirmationQuit: 'Quit',
     questionQuit: 'Do you really want to Quit?',
+    managerChatTitle: 'Online chat with your personal manager',
+    typeManagerChat: 'managers',
   }
 };
 
 export const templates = {
   popupConfirm: Handlebars.compile(document.querySelector(select.template.popupConfirm).innerHTML),
+  popupChat: Handlebars.compile(document.querySelector(select.template.popupChat).innerHTML),
 };

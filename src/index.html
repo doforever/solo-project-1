@@ -57,7 +57,7 @@
               <img src="./images/avatar.png" alt="manager avatar">
               <div class="notification__status notification__status--big notification__status--active"></div>
             </div>
-            <a href="#">Mikhael E.</a>
+            <a data-id='1'>Michael E.</a>
           </div>
         </section>
       </div>
@@ -490,6 +490,30 @@
         <section class="popup__section">
           <button class="button button--grey popup__button js--close-modal">{{ cancellation }}</button>
           <button class="button popup__button js--confirm">{{ confirmation }}</button>
+        </section>
+      </div>
+    </script>
+    <script id="template-popup-chat" type="text/x-handlebars-template">
+      <div class="popup popup--chat">
+        <header class="popup__header">
+          <h1>{{ title }}</h1>
+        </header>
+        <section class="popup__section">
+          <div class="popup__section__col">
+            <img src="{{ contactAvatar }}" alt="manager image">
+          </div>
+          <div class="popup__section__col">
+            <p class="popup__contactName">{{ contactName }}</p>
+            <div class="popup__contactStatus"> {{ contactStatus }} </div>
+          </div>
+        </section>
+        <section class="popup__section popup__conversation"></section>
+        <section class="popup__section">
+          <form>
+            <i class="icon-message popup__message__icon"></i>
+            <input type="text" class="popup__message" placeholder="Enter the message..">
+            <button class="button popup__button js--confirm">Send</button>
+          </form>
         </section>
       </div>
     </script>

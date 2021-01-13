@@ -1,6 +1,7 @@
 import { classNames, select, settings } from './settings.js';
 import Form from './components/form.js';
 import Confirm from './components/confirm.js';
+import Chat from './components/chat.js';
 
 const app = {
   init: function() {
@@ -19,6 +20,7 @@ const app = {
     this.pages = document.querySelectorAll(select.main.pages);
     this.navLinks = document.querySelectorAll(select.sidebar.navLinks);
     this.dom.quit = document.querySelector(select.topBar.quit);
+    this.dom.manager = document.querySelector(select.sidebar.managerLink);
   },
 
   initActions: function() {
@@ -28,6 +30,10 @@ const app = {
 
     this.dom.quit.addEventListener('click', () => {
       this.popupConfirm.open();
+    });
+
+    this.dom.manager.addEventListener('click', () => {
+      this.popupChat.open(this.dom.manager.dataset.id);
     });
   },
 
@@ -84,6 +90,7 @@ const app = {
 
   initPopups: function() {
     this.popupConfirm = new Confirm (settings.popup.questionQuit, settings.popup.confirmationQuit);
+    this.popupChat = new Chat (settings.popup.managerChatTitle, settings.popup.typeManagerChat);
   }
 };
 
