@@ -48,10 +48,13 @@
     animation-timing-function: ease-in;
     overflow: auto;
     padding: 30px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
-    &::webkit-scrollbar {
+    &::-webkit-scrollbar {
       display: none;
     }
+
 
     &--visible {
       opacity: 1;
