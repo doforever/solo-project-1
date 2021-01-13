@@ -21,6 +21,7 @@ const app = {
     this.navLinks = document.querySelectorAll(select.sidebar.navLinks);
     this.dom.quit = document.querySelector(select.topBar.quit);
     this.dom.manager = document.querySelector(select.sidebar.managerLink);
+    this.dom.popupBackground = document.querySelector(select.popup.background);
   },
 
   initActions: function() {
@@ -29,11 +30,23 @@ const app = {
     });
 
     this.dom.quit.addEventListener('click', () => {
+      this.showPopupBackground();
       this.popupConfirm.open();
     });
 
     this.dom.manager.addEventListener('click', () => {
+      this.showPopupBackground();
       this.popupChat.open(this.dom.manager.dataset.id);
+    });
+
+    document.addEventListener('keyup', (event) => {
+      if (event.key === 'Escape') {
+        this.hidePopupBackground();
+      }
+    });
+
+    this.dom.popupBackground.addEventListener('click', () => {
+      this.hidePopupBackground();
     });
   },
 
@@ -91,7 +104,15 @@ const app = {
   initPopups: function() {
     this.popupConfirm = new Confirm (settings.popup.questionQuit, settings.popup.confirmationQuit);
     this.popupChat = new Chat (settings.popup.managerChatTitle, settings.popup.typeManagerChat);
-  }
+  },
+
+  showPopupBackground: function() {
+    this.dom.popupBackground.classList.add(classNames.popup.backgroundVisible);
+  },
+
+  hidePopupBackground: function() {
+    this.dom.popupBackground.classList.remove(classNames.popup.backgroundVisible);
+  },
 };
 
 app.init();

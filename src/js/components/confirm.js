@@ -24,6 +24,7 @@ class Confirm extends Popup {
     super.initActions();
 
     this.dom.confirm.addEventListener('click', () => {
+      this.hideBackground();
       this.close();
     });
   }

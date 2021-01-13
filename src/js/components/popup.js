@@ -27,12 +27,12 @@ class Popup {
   initGlobalActions() {
     document.addEventListener('keyup', (event) => {
       if (event.key === 'Escape') {
-        this.close();
+        if (this.dom.element) this.close();
       }
     });
 
     this.dom.background.addEventListener('click', () => {
-      this.close();
+      if (this.dom.element) this.close();
     });
   }
 
@@ -40,6 +40,7 @@ class Popup {
     this.dom.element.addEventListener('click', (event) => {
       event.stopPropagation();
       if (event.target.classList.contains(classNames.popup.buttonClose)) {
+        this.hideBackground();
         this.close();
       }
     });
@@ -50,7 +51,6 @@ class Popup {
   }
 
   open() {
-    this.toggleBackgroundVisibility();
     this.render();
     this.getElements();
     this.initActions();
@@ -58,12 +58,11 @@ class Popup {
   }
 
   close() {
-    this.toggleBackgroundVisibility();
     this.dom.element.remove();
   }
 
-  toggleBackgroundVisibility() {
-    this.dom.background.classList.toggle(classNames.popup.backgroundVisible);
+  hideBackground() {
+    this.dom.background.classList.remove(classNames.popup.backgroundVisible);
   }
 }
 
