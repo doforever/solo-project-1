@@ -47,7 +47,11 @@ export const select = {
   template: {
     popupConfirm: '#template-popup-confirm',
     popupChat: '#template-popup-chat',
-  }
+  },
+  chart: {
+    context: '#myChart',
+    legendWrapper: '.chart__legend',
+  },
 };
 
 export const settings = {
@@ -64,6 +68,9 @@ export const settings = {
     questionQuit: 'Do you really want to Quit?',
     managerChatTitle: 'Online chat with your personal manager',
     typeManagerChat: 'managers',
+  },
+  chart: {
+    colors: ['#8DBEC8', '#F29E4E', '#71B374'],
   }
 };
 

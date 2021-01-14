@@ -9,5 +9,42 @@
   &__visual {
     padding: 40px 17px 0 17px;
     width: 100%;
+    overflow-x: auto;
+  }
+
+  &__canvas-container {
+    position: relative;
+    min-width: 450px;
+  }
+
+  &__legend {
+    padding-bottom: 40px;
+
+    ul {
+      @include flex (row, center, center);
+      flex-wrap: wrap;
+    }
+
+    li {
+      @include flex(row, center, space-between);
+      padding: 12px 15px;
+      line-height: 17px;
+      margin: 0 $padding-text;
+      border-radius: $radius;
+      cursor: $custom-pointer;
+
+      &:hover {
+        background-color: $color-greys-xl;
+      }
+
+      span {
+        display: inline-block;
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        margin-bottom: 4px;
+        margin-right: 10px;
+      }
+    }
   }
 }

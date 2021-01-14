@@ -2,12 +2,14 @@ import { classNames, select, settings } from './settings.js';
 import Form from './components/form.js';
 import Confirm from './components/confirm.js';
 import Chat from './components/chat.js';
+import StatChart from './components/statChart.js';
 
 const app = {
   init: function() {
     this.getElements();
     this.initPopups();
     this.initForm();
+    this.initPlugins();
     this.initPages();
     this.initActions();
     console.log('thisApp', this);
@@ -22,6 +24,10 @@ const app = {
     this.dom.quit = document.querySelector(select.topBar.quit);
     this.dom.manager = document.querySelector(select.sidebar.managerLink);
     this.dom.popupBackground = document.querySelector(select.popup.background);
+  },
+
+  initPlugins: function() {
+    this.chart = new StatChart();
   },
 
   initActions: function() {
