@@ -60,7 +60,6 @@ class StatChart {
       options: {
         responsive: true,
         legendCallback: function(chart) {
-          console.log(chart.data.datasets);
           let text = [];
           text.push('<ul>');
           for (let i=0; i<chart.data.datasets.length; i++) {
@@ -90,18 +89,16 @@ class StatChart {
   initActions(){
     this.legendWrapper.addEventListener('click', (event) => {
       if (event.target.tagName === 'LI'){
-        // console.dir(event.target);
-        this.filterData(event.target.textContent);
+        this.filterData(event.target.dataset.index);
       }
     });
   }
 
-  filterData(labelName) {
-    const filter = labelName.toLowerCase();
-    // let meta = this.myBar.getDatasetMeta(filter);
-    // console.log(this.myBar.data.datasets[2]);
-    // meta.hidden = meta.hidden === null ? !this.myBar.data.datasets[filter].hidden : null;
-    // this.myBar.update();
+  filterData(index) {
+    let meta = this.myBar.getDatasetMeta(index);
+    console.log(this.myBar.data.datasets[index]);
+    meta.hidden = meta.hidden === null ? !this.myBar.data.datasets[index].hidden : null;
+    this.myBar.update();
   }
 }
 
