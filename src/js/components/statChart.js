@@ -6,7 +6,7 @@ class StatChart {
     this.getData();
     this.initPlugin();
     this.renderLegend();
-    this.getElements();
+    this.initActions();
   }
 
   getData(){
@@ -59,6 +59,18 @@ class StatChart {
       data: this.data,
       options: {
         responsive: true,
+        legendCallback: function(chart) {
+          console.log(chart.data.datasets);
+          let text = [];
+          text.push('<ul>');
+          for (let i=0; i<chart.data.datasets.length; i++) {
+            text.push('<li data-index="' + i + '">');
+            text.push('<span style="background-color:' + chart.data.datasets[i].backgroundColor + '">' + '</span>' + chart.data.datasets[i].label );
+            text.push('</li>');
+          }
+          text.push('</ul>');
+          return text.join('');
+        },
         legend: {
           display: false,
         },
@@ -75,8 +87,21 @@ class StatChart {
     this.legendWrapper.innerHTML = legendHTML;
   }
 
-  getElements(){
+  initActions(){
+    this.legendWrapper.addEventListener('click', (event) => {
+      if (event.target.tagName === 'LI'){
+        // console.dir(event.target);
+        this.filterData(event.target.textContent);
+      }
+    });
+  }
 
+  filterData(labelName) {
+    const filter = labelName.toLowerCase();
+    // let meta = this.myBar.getDatasetMeta(filter);
+    // console.log(this.myBar.data.datasets[2]);
+    // meta.hidden = meta.hidden === null ? !this.myBar.data.datasets[filter].hidden : null;
+    // this.myBar.update();
   }
 }
 
