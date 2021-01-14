@@ -14,6 +14,9 @@ export const classNames = {
     visible: 'popup--visible',
     backgroundVisible: 'popup__background--visible',
     buttonClose: 'js--close-modal',
+  },
+  chart: {
+    datasetHidden: 'hidden',
   }
 };
 
@@ -23,6 +26,8 @@ export const select = {
     popupConfirm: '.popup--confirm',
     buttonConfirm: '.popup .js--confirm',
     buttonsClose: '.popup .js--close-modal',
+    chatConversation: '.popup__conversation',
+    chatMessage: '.popup__message',
   },
   header: {
     menuToggleBtn : '.header__toggle-menu',
@@ -51,6 +56,7 @@ export const select = {
   chart: {
     context: '#myChart',
     legendWrapper: '.chart__legend',
+    legendButtons: '.chart__legend li',
   },
 };
 
@@ -71,6 +77,7 @@ export const settings = {
   },
   chart: {
     colors: ['#8DBEC8', '#F29E4E', '#71B374'],
+    hiddenDefault: [2],
   }
 };
 

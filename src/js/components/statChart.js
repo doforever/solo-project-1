@@ -1,4 +1,4 @@
-import {select, settings} from '../settings.js';
+import {select, settings, classNames} from '../settings.js';
 import dataSource from '../data.js';
 
 class StatChart {
@@ -82,23 +82,29 @@ class StatChart {
 
   renderLegend() {
     const legendHTML = this.myBar.generateLegend();
-    this.legendWrapper = document.querySelector(select.chart.legendWrapper);
-    this.legendWrapper.innerHTML = legendHTML;
+    this.dom = {};
+    this.dom.legendWrapper = document.querySelector(select.chart.legendWrapper);
+    this.dom.legendWrapper.innerHTML = legendHTML;
+    this.dom.legendButtons = this.dom.legendWrapper.querySelectorAll(select.chart.legendButtons);
+    for (let i of settings.chart.hiddenDefault){
+      this.filterData(this.dom.legendButtons[i]);
+    }
   }
 
   initActions(){
-    this.legendWrapper.addEventListener('click', (event) => {
+    this.dom.legendWrapper.addEventListener('click', (event) => {
       if (event.target.tagName === 'LI'){
-        this.filterData(event.target.dataset.index);
+        this.filterData(event.target);
       }
     });
   }
 
-  filterData(index) {
+  filterData(button) {
+    let index = button.dataset.index;
     let meta = this.myBar.getDatasetMeta(index);
-    console.log(this.myBar.data.datasets[index]);
     meta.hidden = meta.hidden === null ? !this.myBar.data.datasets[index].hidden : null;
     this.myBar.update();
+    button.classList.toggle(classNames.chart.datasetHidden, meta.hidden);
   }
 }
 
