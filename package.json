@@ -16,7 +16,7 @@
         "build:clean": "mkdirp docs && rm -r docs && mkdirp docs",
         "build:copy-fonts": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/fonts/*\" docs",
         "build:copy-images": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/images/*\" docs",
-        "build:copy-js": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/js/*\" docs",
+        "build:copy-js": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/js/**/*\" docs",
         "build:copy-vendor": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/vendor/*\" docs",
         "build:copy-index": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/index.html\" docs",
         "build:sass": "node-sass --output-style compact -o docs/css src/sass",
