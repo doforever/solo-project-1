@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/Glyphter.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__min">
+      <img src="./images/logo.png" alt="Just do it">
+      <a class="header__toggle-menu fas fa-bars"></a>
+    </div>
+    <div class="drop-down">
+      <div class="sidebar">
+        <nav class="sidebar__section sidebar__section--first">
+          <a class="sidebar__menu-item" href="#general">
+            <i class="icon-general"></i>
+            <span>General</span>
+          </a>
+          <a class="sidebar__menu-item" href="#details">
+            <i class="icon-details"></i>
+            <span>Details</span>
+          </a>
+          <a class="sidebar__menu-item" href="#links">
+            <i class="icon-links"></i>
+            <span>Links</span>
+          </a>
+          <a class="sidebar__menu-item" href="#banners">
+            <i class="icon-banners"></i>
+            <span>Banners</span>
+          </a>
+          <a class="sidebar__menu-item" href="#personal_data">
+            <i class="icon-personaldata"></i>
+            <span>Personal data</span>
+          </a>
+          <a class="sidebar__menu-item" href="#payout">
+            <i class="icon-payout"></i>
+            <span>Payout</span>
+          </a>
+          <a class="sidebar__menu-item" href="#postback">
+            <i class="icon-postback"></i>
+            <span>Postback</span>
+          </a>
+        </nav>
+        <section class="sidebar__section sidebar__section--left">
+          <h1 class="sidebar__section__title">Your manager</h1>
+          <div class="sidebar__manager">
+            <div class="notification">
+              <img src="./images/avatar.png" alt="manager avatar">
+              <div class="notification__status notification__status--big notification__status--active"></div>
+            </div>
+            <a data-id='1'>Michael E.</a>
+          </div>
+        </section>
+      </div>
+      <nav class="top-bar">
+        <a class="top-bar__button">
+          <div class="top-bar__button__item">
+            <i class="icon-wallet top-bar__icon"></i>
+          </div>
+          <div class="top-bar__button__item">
+            <div class="top-bar__balance">
+              $1,500.00
+            </div>
+          </div>
+          <div class="top-bar__button__item">
+            <i class="icon-arrow-down top-bar__icon top-bar__icon--sm"></i>
+          </div>
+        </a>
+        <a class="top-bar__button">
+          <div class="top-bar__button__item notification">
+            <i class="icon-notification top-bar__icon"></i>
+            <div class="notification__status notification__status--busy"></div>
+          </div>
+        </a>
+        <a class="top-bar__button">
+          <div class="top-bar__button__item">
+            <i class="icon-profile top-bar__icon"></i>
+          </div>
+          <div class="top-bar__button__item">
+            <p>Leonardo Di Caprio</p>
+          </div>
+        </a>
+        <a class="top-bar__button quit">
+          <div class="top-bar__button__item">
+            <i class="icon-quit top-bar__icon"></i>
+          </div>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="statistics" class="main__section statistics">
+      <header class="main__section__row main__section__row--left">
+        <h1>General statistics</h1>
+      </header>
+      <div class="main__section__row date-period__wrapper">
+        <form class="date-period">
+          <div class="date-period__input-group">
+            <input class="date-period__input" name="start_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
+            <input class="date-period__input" name="end_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
+            <i class="icon-calendar date-period__icon"></i>
+          </div>
+          <button class="button button--square date-period__button">
+            <i class="button__icon icon-refresh"></i>
+          </button>
+        </form>
+      </div>
+      <div class="main__section__row main__section__row--naked table__wrapper">
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 main__section__col">
+          <div class="table__row table__row--flex">
+            <span class="table__header">Visit Signups</span>
+            <span>124</span>
+          </div>
+          <div class="table__row table__row--flex">
+            <span class="table__header">FTD</span>
+            <span>445</span>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 main__section__col">
+          <div class="table__row table__row--flex">
+            <span class="table__header">Net deposit</span>
+            <span>564</span>
+          </div>
+          <div class="table__row table__row--flex">
+            <span class="table__header">Turn over</span>
+            <span>432</span>
+          </div>
+        </div>
+      </div>
+      <div class="main__section__row main__section__row--naked">
+        <div class="col-sm-12 col-lg-10 col-xl-8 chart__wrapper">
+          <figure class="chart">
+            <figcaption class="chart__title">Earnings chart</figcaption>
+            <div class="chart__visual">
+              <div class="chart__legend"></div>
+              <div class="chart__canvas-container">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="links" class="main__section links">
+      <header class="main__section__row main__section__row--left">
+        <h1>Links</h1>
+      </header>
+      <div class="main__section__row main__section__row--naked">
+        <div class="col-sm-12 col-lg-10 col-xl-8">
+          <button class="button">
+            + add new
+          </button>
+          <div class="table__wrapper">
+            <table class="table">
+              <tr class="table__row">
+                <td class="table__header">Home page</td>
+                <td><a href="#">http://www.homepage.com</a></td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Currently offer</td>
+                <td><a href="#">http://www.currently.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Blurpix</td>
+                <td><a href="#">http://www.blurpix.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Your Site</td>
+                <td><a href="#">http://www.yoursite.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Google</td>
+                <td><a href="#">http://www.google.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Facebook</td>
+                <td><a href="#">http://www.facebook.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Dashboard</td>
+                <td><a href="#">http://www.dashboard.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Blurax</td>
+                <td><a href="#">http://www.blurax.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Piece of Wine</td>
+                <td><a href="#">http://www.pieceofwine.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Twitter</td>
+                <td><a href="#">http://www.twitter.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <button class="button">
+            + add new
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="banners" class="main__section links">
+      <header class="main__section__row main__section__row--left">
+        <h1>Banners</h1>
+      </header>
+      <div class="main__section__row main__section__row--naked">
+        <div class="col-sm-12 col-lg-10 col-xl-8">
+          <button class="button">
+            + add new
+          </button>
+          <div class="table__wrapper">
+            <table class="table">
+              <tr class="table__row">
+                <td class="table__header">Banner main</td>
+                <td><a href="#">http://www.homepage.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Sign up banner</td>
+                <td><a href="#">http://www.currently.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Banner left side</td>
+                <td><a href="#">http://www.blurpix.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Vertical banner</td>
+                <td><a href="#">http://www.yoursite.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Front banner</td>
+                <td><a href="#">http://www.google.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__header">Horizontal banner</td>
+                <td><a href="#">http://www.facebook.com</a></td>
+                <td>
+                  <a><i class=" table__icon icon-links"></i>
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <i class=" table__icon icon-trash"></i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <button class="button">
+            + add new
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="personal_data" class="main__section personal-data">
+      <header class="main__section__row main__section__row--left">
+        <h1>Personal data</h1>
+      </header>
+      <form novalidate class="form">
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="name">Name</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="text" name="name" id="name" value="Leonardo" required>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="surname">Surname</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="text" name="surname" id="surname" value="Dicaprio" required>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="email">E-mail</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="email" name="email" id="email" value="leo@gmail.com" required>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="phone">Phone number</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="text" name="phone" id="phone" value="+1 432 55 00 44" required>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="skype">Skype</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="text" name="skype" id="skype" value="Leonardo.D">
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="icq">ICQ</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="text" name="icq" id="icq">
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="msn">Msn</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="text" name="msn" id="msn">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="wallet">Wallet</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" type="text" name="wallet" id="wallet">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="row form__input-group">
+          <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <div class="form__field">
+              <label class="form__field__label" for="password">Password</label>
+              <div class="form__input-wrapper">
+                <i class="icon-password form__input__icon"></i>
+                <input class="form__input form__input--password" type="password" name="password" id="password" required>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__field__label" for="repeat">Repeat</label>
+              <div class="form__input-wrapper">
+                <i class="icon-password form__input__icon"></i>
+                <input class="form__input form__input--password" type="password" name="repeat" id="repeat" required>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row">
+          <button class="button" type="submit">Save</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <div class="popup__background">
+    <script id="template-popup-confirm" type="text/x-handlebars-template">
+      <div class="popup popup--confirm">
+        <header class="popup__header">
+          <h2>{{ question }}</h2>
+        </header>
+        <section class="popup__section popup__section--right">
+          <button class="button button--grey popup__button js--close-modal">{{ cancellation }}</button>
+          <button class="button popup__button js--confirm">{{ confirmation }}</button>
+        </section>
+      </div>
+    </script>
+    <script id="template-popup-chat" type="text/x-handlebars-template">
+      <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6 popup popup--modal">
+        <header class="popup__header">
+          <h1>{{ title }}</h1>
+        </header>
+        <section class="popup__section">
+          <div class="row row--left">
+            <div class="popup__section__col">
+              <img src="{{ contactAvatar }}" alt="manager image">
+            </div>
+            <div class="popup__section__col">
+              <p class="popup__contact-name">{{ contactName }}</p>
+              <p class="popup__contact-status"> {{ contactStatus }} </p>
+            </div>
+          </div>
+        </section>
+        <section class="popup__section popup__conversation"></section>
+        <section class="popup__section">
+          <form class="row popup__row">
+            <div class="popup__message-wrapper">
+              <i class="icon-message form__input__icon"></i>
+              <input type="text" class="popup__message" placeholder="Enter the message..">
+            </div>
+            <button class="button popup__button js--confirm">Send</button>
+          </form>
+        </section>
+      </div>
+    </script>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
