@@ -54,7 +54,6 @@
         "nu-html-checker": "^0.1.0",
         "onchange": "^5.2.0",
         "optipng-bin": "^7.0.0",
-        "pngquant-bin": "^6.0.0",
         "stylelint": "^9.10.1",
         "stylelint-scss": "^3.5.4",
         "uglify-es": "^3.3.9"
