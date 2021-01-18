@@ -3,6 +3,7 @@ import Form from './components/form.js';
 import Confirm from './components/confirm.js';
 import Chat from './components/chat.js';
 import StatChart from './components/statChart.js';
+import DateRange from './components/dateRange.js';
 
 const app = {
   init: function() {
@@ -24,10 +25,12 @@ const app = {
     this.dom.quit = document.querySelector(select.topBar.quit);
     this.dom.manager = document.querySelector(select.sidebar.managerLink);
     this.dom.popupBackground = document.querySelector(select.popup.background);
+    this.dom.dateRange = document.querySelector(select.statistics.dateRange);
   },
 
   initPlugins: function() {
     this.chart = new StatChart();
+    this.dateRange = new DateRange(this.dom.dateRange);
   },
 
   initActions: function() {

@@ -51,7 +51,7 @@ class StatChart {
   }
 
   initPlugin() {
-    const context = document.querySelector(select.chart.context).getContext('2d');
+    const context = document.querySelector(select.statistics.chartcontext).getContext('2d');
 
     // eslint-disable-next-line no-undef
     this.myBar = new Chart(context, {
@@ -83,9 +83,9 @@ class StatChart {
   renderLegend() {
     const legendHTML = this.myBar.generateLegend();
     this.dom = {};
-    this.dom.legendWrapper = document.querySelector(select.chart.legendWrapper);
+    this.dom.legendWrapper = document.querySelector(select.statistics.legendWrapper);
     this.dom.legendWrapper.innerHTML = legendHTML;
-    this.dom.legendButtons = this.dom.legendWrapper.querySelectorAll(select.chart.legendButtons);
+    this.dom.legendButtons = this.dom.legendWrapper.querySelectorAll(select.statistics.legendButtons);
     for (let i of settings.chart.hiddenDefault){
       this.filterData(this.dom.legendButtons[i]);
     }

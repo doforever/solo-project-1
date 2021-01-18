@@ -53,10 +53,14 @@ export const select = {
     popupConfirm: '#template-popup-confirm',
     popupChat: '#template-popup-chat',
   },
-  chart: {
-    context: '#myChart',
+  statistics: {
+    chartcontext: '#myChart',
     legendWrapper: '.chart__legend',
     legendButtons: '.chart__legend li',
+    dateRange: '.statistics .date-period',
+    dateInputGroup: '.date-period__input-group',
+    calendarPicker: '.date-period__icon',
+    refreshDate: '.date-period__button',
   },
 };
 
