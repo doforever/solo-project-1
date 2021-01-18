@@ -20,7 +20,7 @@
         "build-docs:clean": "mkdirp docs && rm -r docs && mkdirp docs docs/js docs/images",
         "build-docs:copy-fonts": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/fonts/*\" docs",
         "build-docs:copy-vendor": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" -e \"*.css.map\" \"src/vendor/*\" docs",
-        "build-docs:minify-js": "uglifyjs src/js/**/* -o docs/js/script.js --compress --mangle",
+        "build-docs:minify-js": "uglifyjs-folder src/js/ --output docs/js/ --each --extension .js",
         "build-docs:minify-html": "html-minifier src/index.html -o docs/index.html --process-scripts \"text/x-handlebars-template\" --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
         "build-docs:sass": "node-sass --output-style compressed -o docs/css src/sass",
         "build-docs:img": "compress --input \"src/images/\" --output \"docs/images/\" --enginepng \"pngout\"",
@@ -56,6 +56,7 @@
         "optipng-bin": "^7.0.0",
         "stylelint": "^9.10.1",
         "stylelint-scss": "^3.5.4",
-        "uglify-es": "^3.3.9"
+        "uglify-es": "^3.3.9",
+        "uglifyjs-folder": "^2.0.0"
     }
 }
