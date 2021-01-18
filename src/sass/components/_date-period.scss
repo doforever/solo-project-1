@@ -38,6 +38,14 @@
     &::placeholder {
       color: $color-greys;
     }
+
+    &.in-edit::active {
+      box-shadow: none;
+    }
+
+    &.in-edit::focus {
+      box-shadow: none;
+    }
   }
 
   &__input:first-child{

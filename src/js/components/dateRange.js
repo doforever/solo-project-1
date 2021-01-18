@@ -42,6 +42,7 @@ class DateRange {
     this.dom.refreshButton.addEventListener('click', (event) => {
       event.preventDefault();
       this.picker.setDates({clear: true}, {clear: true});
+      this.setShowOnClick(false);
     });
   }
 
