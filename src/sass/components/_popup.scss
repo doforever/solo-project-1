@@ -128,12 +128,28 @@
 
   &__conversation {
     @include flex(column, flex-start, flex-start);
+    max-height: 60vh;
+    overflow-y: auto;
 
     &__message {
+      position: relative;
       display: inline-block;
-      padding: $padding-text - 4px $padding-text $padding-text*2 $padding-text;
-      background-image: url(../../images/conversation.svg);
+      padding: $padding-sm;
       color: $color-light;
+      background-color: $color-greys-d;
+      border-radius: $radius;
+      margin-bottom: 10px;
+      border-bottom-right-radius: 0;
+      max-width: 100%;
+      word-break: break-word;
+
+      &::after {
+        position: absolute;
+        bottom: -13px;
+        right: 0;
+        content: url(../../images/i_say.svg);
+        width: 5px;
+      }
 
       &--manager {
         color: $color-dark;

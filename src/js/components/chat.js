@@ -51,6 +51,7 @@ class Chat extends Popup {
       messageDiv.innerText = message;
       messageDiv.classList.add(classNames.popup.chatMessage);
       this.dom.conversation.appendChild(messageDiv);
+      messageDiv.scrollIntoView();
     }
     this.dom.message.value = '';
   }
