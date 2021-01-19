@@ -1,1 +1,0 @@
-import dataSource from"../data.js";class Contact{constructor(t,a){this.nick=dataSource[t][a].nick,this.avatar=dataSource[t][a].avatar,this.status=dataSource[t][a].status}}export default Contact;
