@@ -502,7 +502,10 @@
     <script id="template-popup-chat" type="text/x-handlebars-template">
       <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6 popup popup--modal">
         <header class="popup__header">
-          <h1>{{ title }}</h1>
+          <div class="row">
+            <h1>{{ title }}</h1>
+            <a class="icon-close popup__btn-close js--close-modal"></a>
+          </div>
         </header>
         <section class="popup__section">
           <div class="row row--left">
@@ -517,7 +520,7 @@
         </section>
         <section class="popup__section popup__conversation"></section>
         <section class="popup__section">
-          <form class="row popup__row">
+          <form class="row">
             <div class="popup__message-wrapper">
               <i class="icon-message form__input__icon"></i>
               <input type="text" class="popup__message" placeholder="Enter the message..">

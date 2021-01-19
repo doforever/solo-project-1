@@ -17,6 +17,11 @@
   &__header {
     padding: $padding-text;
     border-bottom: $border-style $color-greys-l;
+
+    .row {
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
   }
 
   &__section {
@@ -39,10 +44,6 @@
         display: block;
       }
     }
-  }
-
-  &__row {
-    align-items: stretch;
   }
 
   &__contact-name {
@@ -117,10 +118,27 @@
   }
 
   &__btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
+    flex: 0 0 auto;
+    color: $color-header;
+
+    &:hover {
+      color: $color-dark;
+    }
+  }
+
+  &__conversation {
+    @include flex(column, flex-start, flex-start);
+
+    &__message {
+      display: inline-block;
+      padding: $padding-text - 4px $padding-text $padding-text*2 $padding-text;
+      background-image: url(../../images/conversation.svg);
+      color: $color-light;
+
+      &--manager {
+        color: $color-dark;
+      }
+    }
   }
 }
 

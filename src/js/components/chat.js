@@ -1,5 +1,5 @@
 import Popup from './popup.js';
-import {templates, select} from '../settings.js';
+import {templates, select, classNames} from '../settings.js';
 import Contact from './contact.js';
 
 class Chat extends Popup {
@@ -31,6 +31,8 @@ class Chat extends Popup {
 
   getElements() {
     this.dom.send = this.dom.element.querySelector(select.popup.buttonConfirm);
+    this.dom.message = this.dom.element.querySelector(select.popup.chatMessageInput);
+    this.dom.conversation = this.dom.element.querySelector(select.popup.chatConversation);
   }
 
   initActions() {
@@ -38,9 +40,19 @@ class Chat extends Popup {
 
     this.dom.send.addEventListener('click', (event) => {
       event.preventDefault();
-      this.hideBackground();
-      this.close();
+      this.sendMessage();
     });
+  }
+
+  sendMessage() {
+    const message = this.dom.message.value.trim();
+    if (message) {
+      let messageDiv = document.createElement('div');
+      messageDiv.innerText = message;
+      messageDiv.classList.add(classNames.popup.chatMessage);
+      this.dom.conversation.appendChild(messageDiv);
+    }
+    this.dom.message.value = '';
   }
 }
 

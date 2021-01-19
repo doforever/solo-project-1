@@ -14,6 +14,7 @@ export const classNames = {
     visible: 'popup--visible',
     backgroundVisible: 'popup__background--visible',
     buttonClose: 'js--close-modal',
+    chatMessage: 'popup__conversation__message',
   },
   chart: {
     datasetHidden: 'hidden',
@@ -27,7 +28,7 @@ export const select = {
     buttonConfirm: '.popup .js--confirm',
     buttonsClose: '.popup .js--close-modal',
     chatConversation: '.popup__conversation',
-    chatMessage: '.popup__message',
+    chatMessageInput: '.popup__message',
   },
   header: {
     menuToggleBtn : '.header__toggle-menu',
