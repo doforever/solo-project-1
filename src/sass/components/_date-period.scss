@@ -39,12 +39,16 @@
       color: $color-greys;
     }
 
-    &.in-edit::active {
-      box-shadow: none;
-    }
+    &.in-edit {
+      border: none;
 
-    &.in-edit::focus {
-      box-shadow: none;
+      &::active {
+        box-shadow: none;
+      }
+
+      &::focus {
+        box-shadow: none;
+      }
     }
   }
 
